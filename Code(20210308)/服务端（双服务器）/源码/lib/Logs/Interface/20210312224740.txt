@@ -1,0 +1,20 @@
+Npgsql.NpgsqlException:
+字段 "ipush" 不存在
+Severity: 错误
+Code: 42703
+   在 Npgsql.NpgsqlState.<ProcessBackendResponses>d__0.MoveNext()
+   在 Npgsql.ForwardsOnlyDataReader.GetNextResponseObject(Boolean cleanup)
+   在 Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   在 Npgsql.ForwardsOnlyDataReader.NextResultInternal()
+   在 Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean preparedStatement, NpgsqlRowDescription rowDescription)
+   在 Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   在 Npgsql.NpgsqlCommand.ExecuteReader(CommandBehavior cb)
+   在 Npgsql.NpgsqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.FillInternal(DataSet dataset, DataTable[] datatables, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, Int32 startRecord, Int32 maxRecords, String srcTable, IDbCommand command, CommandBehavior behavior)
+   在 System.Data.Common.DbDataAdapter.Fill(DataSet dataSet, String srcTable)
+   在 ADServer.DAL.PostgreHelper.ExecuteQuery(String connectionString, CommandType cmdType, String cmdText, DbParameter[] cmdParms) 位置 E:\Project\personal\东莞长盈\Code(20210308)\服务端\源码\DAL\PostgreHelper.cs:行号 43
+   在 ADServer.DAL.D_Employ_Info.GetListWhereTel(String strWhere) 位置 E:\Project\personal\东莞长盈\Code(20210308)\服务端\源码\DAL\D_Employ_Info.cs:行号 2590
+   在 ADServer.BLL.B_Employ_Info.GetListWhereTel(String strWhere) 位置 E:\Project\personal\东莞长盈\Code(20210308)\服务端\源码\BLL\B_Employ_Info.cs:行号 474
+   在 ADServer.Interface.VisitorInterface.ReceiveAppointment_API(String token, JArray lstVisitPersonVO, Int32 flag) 位置 E:\Project\personal\东莞长盈\Code(20210308)\服务端\源码\Interface\VisitorInterfacep.cs:行号 122

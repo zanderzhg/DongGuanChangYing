@@ -1,0 +1,159 @@
+/* pages/wechat/register.wxss */
+/* pages/wechat/register.wxss */
+body{
+  background-color: rgb(241,241,241);
+  font-size: 16px;
+
+}
+input{
+  border: 0px;
+  outline:none;
+}
+.blue{
+  background-color: rgb(0,122,197);
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+}
+.box{
+  width: 42%;
+}
+.box-60{
+  width: 60%;
+}
+.text{
+  color:white;
+  font-size: 20px;
+}
+.white{
+  background-color: white;
+  margin: auto;
+  width: 85%;
+  height: 150px;
+  border-radius: 15px;
+}
+.mg-t25{
+  margin-top: 25px;
+}
+.row{
+   display: flex;
+   margin: auto;
+   width: 90%;
+   padding-top: 15px;
+   padding-bottom: 15px;
+}
+.hr{
+   width: 90%;
+}
+.button{
+  background-color: rgb(0,122,197);
+  margin: auto;
+  margin-top: 25px;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  width: 60%;
+  border-radius: 5px;
+}
+.button-text{
+  color: white;
+  font-size: 16px;
+}
+.yzm{
+  background-color: rgb(0,122,197);
+  width: 25%;
+  height:30px;
+  line-height: 15px;
+  text-align: center;
+  margin-left: 10px;
+  border-radius: 15px;
+  color:white;
+}
+
+
+
+.amountBg{
+  width: 700rpx;
+  height: 100rpx;
+  background-color: #5495e6;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 30rpx;
+  border-radius: 25rpx;
+}
+
+.account {
+  color: #fff;
+  margin: 0 auto;
+}
+
+.content {
+  border-radius: 40rpx;
+  background-color: white;
+  width: 700rpx;
+  margin: 0 auto;
+  margin-top: 30rpx;
+}
+
+
+.form-group {
+  background-color: #fff;
+  width: 650rpx;
+  margin: 0 auto;
+  margin-top: 10rpx;
+  padding: 20rpx;
+  margin-bottom: 4rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 40rpx;
+}
+.form-group .lable-key{
+  width: 200rpx;
+}
+.form-group input{
+  width: 450rpx;
+}
+.form-group radio-group{
+  width: 375rpx;
+}
+.form-group radio{
+ padding-right: 15rpx; 
+}
+
+.hr{
+  height: 4rpx;
+  background:#a7a4a4;
+  width: 650rpx;
+  margin: 0 auto;
+}
+
+.form-group button{
+  /* background-color: red; */
+  font-size: 40rpx;
+  width: 650rpx;
+  height: 100rpx;
+  color: #fff;
+  background-color: #5495e6;
+}
+
+
+.form-group .btn-ygzctd{
+  background-color: #fff;
+  color: #1196ce;
+}
+
+.modal-image{
+  height: 400rpx;
+  margin: 0 auto;
+  text-align: center;
+}
+.modal-image image{
+  width: 205rpx;
+  height: 301rpx;
+}
+modal view{
+  text-align: center;
+}

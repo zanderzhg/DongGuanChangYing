@@ -1,0 +1,9 @@
+DataSrv Token 错误：
+JWT.TokenExpiredException: Token has expired.
+   在 JWT.JwtValidator.Validate(String payloadJson, String decodedCrypto, String decodedSignature)
+   在 JWT.JwtDecoder.Validate(String payload, String payloadJson, String[] parts, Byte[] key)
+   在 JWT.JwtDecoder.Decode(String token, Byte[] key, Boolean verify)
+   在 JWT.JwtDecoder.Decode(String token, String key, Boolean verify)
+   在 ADServer.BLL.AuthTokenHelper.GetTokenJson(String token) 位置 E:\Project\personal\东莞长盈\Code(20210308)\服务端 - 副本\源码\BLL\TokenHelper.cs:行号 68
+   在 ADServer.BLL.AuthTokenHelper.DecodeToken(String token) 位置 E:\Project\personal\东莞长盈\Code(20210308)\服务端 - 副本\源码\BLL\TokenHelper.cs:行号 50
+   在 ADServer.Interface.VisitorInterface.AuthenToken(String token) 位置 E:\Project\personal\东莞长盈\Code(20210308)\服务端 - 副本\源码\Interface\VisitorInterfacep.cs:行号 34

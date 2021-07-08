@@ -1,0 +1,1 @@
+Exception : ERROR: 42703: column "winxinid" does not exist

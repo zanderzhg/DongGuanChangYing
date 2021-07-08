@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RegedDev>
+  <Device id="1">
+    <DevID>1</DevID>
+    <IP>192.168.5.100</IP>
+    <Port>6500</Port>
+    <DevType>1</DevType>
+    <Version>V1.0-181128</Version>
+    <Description>设备注册信息</Description>
+  </Device>
+
+  <Device id="2">
+    <DevID>2</DevID>
+    <IP>192.168.5.101</IP>
+    <Port>6500</Port>
+    <DevType>1</DevType>
+    <Version>V1.0-181128</Version>
+    <Description>设备注册信息</Description>
+  </Device>
+
+  <Device id="3">
+    <DevID>3</DevID>
+    <IP>192.168.5.102</IP>
+    <Port>6500</Port>
+    <DevType>1</DevType>
+    <Version>V1.0-181128</Version>
+    <Description>设备注册信息</Description>
+  </Device>
+
+  <Device id="4">
+    <DevID>4</DevID>
+    <IP>192.168.5.103</IP>
+    <Port>6500</Port>
+    <DevType>1</DevType>
+    <Version>V1.0-181128</Version>
+    <Description>设备注册信息</Description>
+  </Device>
+  
+</RegedDev>

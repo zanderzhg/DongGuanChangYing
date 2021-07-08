@@ -1,0 +1,39 @@
+/tecsunapi/data/update/visitor/receiveAppointment
+{
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcHBJZCI6InRlY3N1biIsImV4cCI6MTYxNTU2NjkzMH0.4uQ32odC9l30zBPk49bJwJeO4iSXNTUfh6RRAJqNX8E",
+    "flag": 1,
+    "datas": [
+        {
+            "vRecordId": 3,
+            "vCertKindName": "1",
+            "vCertNo": "44xxxxx6735",
+            "vName": "hkh",
+            "vPhone": "14xxxxxxx68",
+            "vCompany": "探索",
+            "vQRCode": "41164564",
+            "vReason": "面试",
+            "vSex": "男",
+            "vEmpPhone": "14xxxxxx8",
+            "vStartTime": "2019-09-12 00:00:00",
+            "vEndTime": "2019-09-13 13:46:29",
+            "vLicensePlate": "粤xxxxxx",
+            "VisitNum": 1
+        }
+    ]
+}
+
+Npgsql.NpgsqlException:
+关系 "f_booking_info" 的 "licenseplate" 字段不存在
+Severity: 错误
+Code: 42703
+   在 Npgsql.NpgsqlState.<ProcessBackendResponses>d__0.MoveNext()
+   在 Npgsql.ForwardsOnlyDataReader.GetNextResponseObject(Boolean cleanup)
+   在 Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   在 Npgsql.ForwardsOnlyDataReader.NextResultInternal()
+   在 Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean preparedStatement, NpgsqlRowDescription rowDescription)
+   在 Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   在 Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   在 ADServer.DAL.PostgreHelper.ExecuteNonQuery(String connectionString, CommandType cmdType, String cmdText, DbParameter[] cmdParms) 位置 E:\Project\personal\东莞长盈\Code(20210308)\服务端\源码\DAL\PostgreHelper.cs:行号 77
+   在 ADServer.DAL.D_Booking_Info.Add_API(M_Booking_Info model) 位置 E:\Project\personal\东莞长盈\Code(20210308)\服务端\源码\DAL\partial\D_Booking_Info.cs:行号 143
+   在 ADServer.BLL.B_Booking_Info.Add_API(M_Booking_Info model) 位置 E:\Project\personal\东莞长盈\Code(20210308)\服务端\源码\BLL\partial\B_Booking_Info.cs:行号 13
+   在 ADServer.Interface.VisitorInterface.ReceiveAppointment_API(String token, JArray lstVisitPersonVO, Int32 flag) 位置 E:\Project\personal\东莞长盈\Code(20210308)\服务端\源码\Interface\VisitorInterfacep.cs:行号 207

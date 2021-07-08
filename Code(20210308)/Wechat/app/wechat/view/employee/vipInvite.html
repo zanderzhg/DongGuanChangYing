@@ -1,0 +1,60 @@
+{extend name="base/common"}
+{block name="body"}
+<div>
+            <div class="flex_row blueTitle pd_15 ">
+                <div>
+                    <img src="__PUBLIC__/static/wechat/images/thumbnail/write.png" width="30"/>
+                </div>
+                <div class="color_fff pl_10 pt_5">贵宾邀请-请填写邀请信息</div>
+            </div>
+            
+            <form>
+            <div class="bg_fff bar pt_10 pb_30">
+                <div class="flex_row input">
+                    <div class=" pl_20">贵宾姓名:</div>
+                    <input type="text"  class="pl_10 fs_15 form_datetime w_60" value="" readonly placeholder="请选择日期" />
+                </div>
+                <div class="flex_row input">
+                    <div class=" pl_20">贵宾手机:</div>
+                    <input class="pl_10 fs_15 w_60" value="" placeholder="请输入贵宾手机号码"/>
+                </div>
+                <div class="flex_row input">
+                    <div class=" pl_20">身份证号:</div>
+                    <input class="pl_10 fs_15 w_60" value="" placeholder="选填"/>
+                </div>
+                <div class="flex_row input">
+                    <div class=" pl_20">来访日期:</div>
+                    <input type="text"  class="pl_10 fs_15 form_datetime w_60" value="" readonly placeholder="请选择日期" />
+                </div>
+                <div class="flex_row input">
+                    <div class=" pl_20">来访时间:</div>
+                    <input class="pl_10 fs_15 form_datetime w_60" value="" readonly placeholder="请选择时间"/>
+                </div>
+                <div class="flex_row input">
+                    <div class=" pl_20 pr_12">邀请事由:</div>
+                    <select class=" fs_15" name="reason" id="reason">
+                            <option value="参观公司">参观公司</option>
+                            <option value="面试">面试</option>
+                            <option value="开会">开会</option>
+                    </select>
+                    <!--<input class="pl_10 fs_15" value="参观公司" />-->
+                </div>
+                <div class="flex_row input">
+                    <div class=" pl_20">车牌号码:</div>
+                    <input class="pl_10 fs_15 w_60" value=""/>
+                </div>
+                <div class="button">确认预约</div>
+            </div>
+            
+            </form>
+        </div>  
+
+<script>
+window.onpopstate = function(event) {
+    WeixinJSBridge.call('closeWindow');
+}
+</script>
+{/block}
+{block name="js"}
+
+{/block}

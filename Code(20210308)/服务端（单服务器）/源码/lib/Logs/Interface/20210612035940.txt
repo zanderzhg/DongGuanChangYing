@@ -1,0 +1,28 @@
+/tecsunapi/data/update/visitor/receiveAppointment
+{
+    "flag": 1,
+    "datas": [
+        {
+            "vRecordId": 958444,
+            "vName": "刘亚广",
+            "vCertNo": "440981198710021937",
+            "vEndTime": "2021-06-10 16:22:00",
+            "vSex": "",
+            "vEmpPhone": "68161",
+            "vEmpName": "测试员工",
+            "vEmpCompany": "测试公司",
+            "vEmpDepartment": "测试部门",
+            "vPhone": "18929130935",
+            "vCompany": "供应商",
+            "vVisitorNum": 1,
+            "vCertKindName": "身份证",
+            "vReason": "插片机给你已发货前付清机构为能",
+            "vMenu": "",
+            "vStartTime": "2021-06-10 15:10:00",
+            "vBelongs": "笔记本电脑;火机",
+            "vLicensePlate": "",
+            "vQRCode": ""
+        }
+    ],
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcHBJZCI6InRlY3N1biIsImV4cCI6MTYyMzQ0ODMyOX0.sZ1iTHQCsanKxglil6cr8C_287lTYk-qPRNmthABot0"
+}

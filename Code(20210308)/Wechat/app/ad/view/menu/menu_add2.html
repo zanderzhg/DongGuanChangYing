@@ -1,0 +1,105 @@
+{extend name="base/common"}
+{block name="body"}
+
+<div class="right_col" role="main">
+  <div class="clearfix">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="x_panel">
+          <div class="x_title">
+            <h2> 自定义菜单 <small> 新增二级自定菜单 </small></h2>
+            <ul class="nav navbar-right panel_toolbox">
+              <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
+              <li><a class="close-link"><i class="fa fa-close"></i></a>
+              </li>
+            </ul>
+            <div class="clearfix"></div>
+          </div>
+          <div class="x_content">
+            <br />
+            <form id="demo-form2" method="post" data-parsley-validate class="form-horizontal form-label-left">
+
+              <input type="hidden" name="id">
+
+              <div class="form-group">
+                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="menuName"> 菜单名称 </label>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                  <input type="text" id="menuName" name="menuName" required="required" class="form-control col-md-7 col-xs-12" placeholder="必填">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12"> 菜单类型 </label>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                  <select  id="menuType" name="menuType" class="form-control col-md-7 col-xs-12">
+                    <option value="URL">URL</option>
+                    <option value="KEY">KEY</option>
+                  </select>
+                </div>
+              </div>
+
+
+               <div class="form-group">
+                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="menuValue"> VALUE </label>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                  <input type="text" id="menuValue" onblur="Url()" name="menuValue" class="form-control col-md-7 col-xs-12" placeholder="必填" >
+                </div>
+              </div>
+
+
+              <div class="form-group">
+                <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12"> 优先级 </label>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                  <select  id="menuPosition" name="menuPosition" class="form-control col-md-7 col-xs-12">
+                    {volist name="diff_menu_data" id="vo" }
+                     <option value="{$vo.position}">{$vo.position_name}</option>
+                    {/volist}
+                  </select>
+                </div>
+              </div>
+
+              <input type="hidden" name="mid" value="{$mid}">
+              <div class="ln_solid"></div>
+              <div class="form-group">
+                <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
+                  <button class="btn btn-primary" type="button" id="btn-back"> 返回 </button>
+                  <button class="btn btn-primary" type="reset">  重置 </button>
+                  <button class="btn btn-success" type="submit" id="btn-sub"> 提交 </button>
+                </div>
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+{/block}
+{block name="js"}
+<script src="__PUBLIC__/static/ad/js/user_visitordetail.js"></script>
+<script type="text/javascript">
+        function Url() {
+                 if(document.getElementById("menuType").value=='KEY'){
+                          return true;
+                 }else{
+      
+                  var menuValue = document.getElementById("menuValue").value; //获取你所填写的信息
+                  var menuValueReg = /^(?=^.{3,255}$)(http(s)?:\/\/)?(www\.)?[a-zA-Z0-9][-a-zA-Z0-9]{0,62}(\.[a-zA-Z0-9][-a-zA-Z0-9]{0,62})+(:\d+)*(\/\w+\.\w+)*([\?&]\w+=\w*)*$/;  //定义约束
+
+                  if (!menuValueReg.test(menuValue)) {   //判断
+                     alert("网址输入错误");
+                      return false;
+                  }
+                  else {
+                      // alert("网址输入正确");
+                      return true;
+                  }
+                }
+              }
+
+
+</script>
+{/block}

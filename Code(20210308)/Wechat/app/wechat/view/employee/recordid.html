@@ -1,0 +1,46 @@
+{extend name="base/common"}
+{block name="body"}
+
+		<div>
+            <div class="bar_title">
+                <div class="f_w10">
+                    <div class="card">欢迎您</div>
+                </div>
+            </div>
+             
+            <div class="bg_fff bar pt_10 pb_30">
+                <div class="flex_row input">
+                    <div class="fc_100 pl_20">访客姓名:</div>
+                    <input class="pl_10 fs_15 w_60" value="{$listid.name}"/>
+                </div>
+                <div class="flex_row input">
+                    <div class="fc_100 pl_20">员工姓名:</div>
+                    <input class="pl_10 fs_15 w_60" value="{$listid.ename}"/>
+                </div>
+                <div class="flex_row input">
+                    <div class="fc_100 pl_20">来访事由:</div>
+                    <input class="pl_10 fs_15 w_60" value="{$listid.reasons}"/>
+                </div>
+                <div class="flex_row input">
+                    <div class="fc_100 pl_20">开始时间:</div>
+                    <input class="pl_10 fs_15 w_60" value="{$listid.start_time|date='Y-m-d H:i',###}" />
+                </div>
+                <div class="flex_row input">
+                    <div class="fc_100 pl_20">截止时间:</div>
+                    <input class="pl_10 fs_15 w_60" value="{$listid.end_time|date='Y-m-d H:i',###}" />
+                </div>
+            </div>
+        </div>
+        
+    <script>
+        window.onpopstate = function(event)
+        {
+          if (event.state.page === 'state1')
+          {
+            WeixinJSBridge.call('closeWindow');
+          }
+        }
+    </script>
+{/block}
+{block name="js"}
+{/block}

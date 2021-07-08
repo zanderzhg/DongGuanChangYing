@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADServer", "ADServer.csproj", "{E3414163-D95E-47FE-84F2-303DDD2F2931}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "..\Setup\Setup.vdproj", "{8E8065FA-AB44-47A8-B328-7FB32417FC6C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E3414163-D95E-47FE-84F2-303DDD2F2931}.Debug|x86.ActiveCfg = Debug|x86
+		{E3414163-D95E-47FE-84F2-303DDD2F2931}.Debug|x86.Build.0 = Debug|x86
+		{E3414163-D95E-47FE-84F2-303DDD2F2931}.Release|x86.ActiveCfg = Release|x86
+		{E3414163-D95E-47FE-84F2-303DDD2F2931}.Release|x86.Build.0 = Release|x86
+		{8E8065FA-AB44-47A8-B328-7FB32417FC6C}.Debug|x86.ActiveCfg = Debug
+		{8E8065FA-AB44-47A8-B328-7FB32417FC6C}.Release|x86.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

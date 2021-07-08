@@ -1,0 +1,54 @@
+{extend name="base/common"}
+{block name="body"}
+<!-- <div class="container"> -->
+	
+	<div class="blue">
+		<div>
+			<div class="text">员工信息</div>
+		</div>
+	</div>
+
+<form action="#" method="post" id="bind" class="form-horizontal" role="form">
+        <div class="bar bg_fff pb_30">
+			<div class="flex_row input">
+				<div class="pl_20">您的姓名:</div>
+				<input class="pl_10 fs_15 w_60" value="{$list.name}"   id="name" name="name" name="phone" />
+			</div>
+			<div class="flex_row input">
+				<div class="pl_20">手机号码:</div>
+				<input class="pl_10 fs_15 w_60 " name="key" id="key" value="{$list.phone}"  id="phone" name="phone"/>
+			</div>
+		</div>
+	</form>
+
+<script>
+
+function release(id)
+{
+	// WeixinJSBridge.call('closeWindow');
+	var url = window.location.protocol+'//'+ window.location.hostname+"/index.php/wechat/employee/release.html"
+	// var url = "release.html";
+	alert(id);
+	// alert('1111');
+	// $.post(url,{"name":name,"phone":phone,"idcard":idcard,"sex":sex,"company":company},function(data,status)
+	$.post(url, {"id":id},function(data,status)
+	{
+		if(status =='success'){
+			alert('成功了');
+		} else {
+			alert('失败了');
+		}
+
+		// alert('点击了');
+		// alert($data);
+		// if(data == 1)
+		// {
+		// 	WeixinJSBridge.call('closeWindow');
+		// }
+	});
+	// alert('生气了');
+}
+</script>
+{/block}
+{block name="js"}
+{/block}

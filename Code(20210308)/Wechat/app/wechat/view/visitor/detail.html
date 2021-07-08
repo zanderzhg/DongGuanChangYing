@@ -1,0 +1,80 @@
+{extend name="base/common"}
+{block name="body"}
+
+<div class="container">
+  <form action="#" method="post" id="form-reserve" class="form-horizontal" role="form" style="display: ;">
+
+    <div class="bg_fff bar pt_10 pb_30">
+        <div class="flex_row input">
+          <div class="fc_100 pl_20 ">来访时间:</div>
+          <input type="text"  class="pl_10 fs_15 form_datetime w_60" id="ephone" name="ephone" placeholder="" readonly="true" value="{$list.start_time|date='Y-m-d H:i',###}" />
+        </div>
+         <div class="flex_row input">
+          <div class="fc_100 pl_20">访客姓名:</div>
+          <input class="pl_10 fs_15 w_60" id="" name="ephone" placeholder="" readonly="true" value="{$list.name}"/>
+        </div>
+        <div class="flex_row input">
+          <div class="fc_100 pl_20">访客手机:</div>
+          <input class="pl_10 fs_15 w_60" id="" name="ephone" placeholder="" readonly="true" value="{$list.phone}"/>
+        </div>
+        <div class="flex_row input">
+          <div class="fc_100 pl_20">来访事由:</div>
+          <input class="pl_10 fs_15 w_60" id="" name="ephone" placeholder="" readonly="true" value="{$list.reasons}"/>
+        </div>
+        <div class="flex_row input">
+          <div class="fc_100 pl_20">车牌号码:</div>
+          <input class="pl_10 fs_15 w_60" id="" name="ephone" placeholder="" readonly="true" value="{$list.car_num}"/>
+        </div>
+        <div class="flex_row input">
+          <div class="fc_100 pl_20">访客单位:</div>
+          <input class="pl_10 fs_15 w_60" id="" name="ephone" placeholder="" readonly="true" value=" {$list.company}"/>
+        </div>
+        <div class="flex_row input">
+          <div class="fc_100 pl_20">进入区域:</div>
+          <input class="pl_10 fs_15 w_60" id="" name="ephone" placeholder="" readonly="true" value="{$list.quyu}"/>
+        </div>
+        <div class="flex_row input">
+          <div class="fc_100 pl_20">访问区域:</div>
+          <input class="pl_10 fs_15 w_60" id="" name="ephone" placeholder="" readonly="true" value=" {$list.area}"/>
+        </div>
+       <!--  <div class="flex_row input">
+          <div class="fc_100 pl_20">访问楼层:</div>
+          <select class="pl_10 fs_15 w_50" name="number" id="number">
+                        <option value="1">3楼</option>
+                        <option value="2">其他楼层</option>
+                    </select>
+        </div> -->
+        {eq name="list['status']" value="2"}
+        <div class="flex_row input">
+          <div class="fc_100 pl_20">拒绝理由:</div>
+          <input class="pl_10 fs_15 w_60" id="" name="ephone" placeholder="" readonly="true" value="{$refuse.content}"/>
+        </div>
+        {/eq}
+        <div class="button_row">
+          {eq name="list['status']" value="0"}
+              <div  class="button mr_15"><a class="a_white_none" href="{:url('refuse',array('id'=>$list['id']))}" id="">拒绝预约</a></div>
+              <div  class="button"><a class="a_white_none" href="{:url('agree',array('id'=>$list['id']))}" id="">同意预约</a></div>
+          {/eq}
+        </div>
+        <div  class="button"  href="javascript:void(0)" onclick="WeixinJSBridge.call('closeWindow');" id="">退出页面</div>
+      </div>
+  </form>
+</div>
+
+<script>
+
+window.onpopstate = function(event) {
+    WeixinJSBridge.call('closeWindow');
+}
+$(".form_datetime").datetimepicker({
+    minView:"month",
+    format: 'yyyy-mm-dd',
+    // todayBtn:  1,
+    startDate : new Date(),
+    autoclose: 1
+});
+</script>
+{/block}
+{block name="js"}
+<script src="__PUBLIC__/static/wechat/js/reserve.js"  type="text/javascript"></script>
+{/block}

@@ -1,0 +1,83 @@
+{extend name="base/common"}
+{block name="body"}
+<div class="container">
+	<form action="#" method="post" id="bind" class="form-horizontal" role="form">
+		{notempty name="list"}
+			{volist name="list" id="vo"}
+			<hr>
+			<a href="{:url('detail', array('id'=> $vo.id))}">
+				{eq name="$vo.visitortype" value="2"}
+				<div class="form-group">
+					<div class="">
+						<label class="col-sm-2 col-xs-1 control-label"></label>
+						<label class="col-sm-2 col-xs-3 control-label">申请类型</label>
+						<label class="col-sm-7 col-xs-8 control-label">访客来访</label>
+					</div>
+					<div class="">
+						<label class="col-sm-2 col-xs-1 control-label"></label>
+						<label class="col-sm-2 col-xs-3 control-label">申请时间</label>
+						<label class="col-sm-7 col-xs-8 control-label">{$vo.create_time}</label>
+					</div>
+					<div class="">
+						<label class="col-sm-2 col-xs-1 control-label"></label>
+						<label class="col-sm-2 col-xs-3 control-label">申请人</label>
+						<label class="col-sm-7 col-xs-8 control-label">{$vo.name}</label>
+					</div>
+					<div class="">
+						<label class="col-sm-2 col-xs-1 control-label"></label>
+						<label class="col-sm-2 col-xs-3 control-label">被访人</label>
+						<label class="col-sm-8 col-xs-8 control-label">{$vo.ename}</label>
+					</div>
+					<div class="">
+						<label class="col-sm-2 col-xs-1 control-label"></label>
+						<label class="col-sm-8 col-xs-8 control-label"><small>点击进行审批</small></label>
+					</div>
+				</div>
+				{else /}
+				<div class="form-group">
+					<div class="">
+						<label class=" col-xs-1 control-label"></label>
+						<label class=" col-xs-3 control-label">申请类型</label>
+						<label class=" col-xs-8 control-label">员工申请</label>
+					</div>
+					<div class="">
+						<label class=" col-xs-1 control-label"></label>
+						<label class=" col-xs-3 control-label">申请时间</label>
+						<label class=" col-xs-8 control-label">{$vo.create_time}</label>
+					</div>
+					<div class="">
+						<label class=" col-xs-1 control-label"></label>
+						<label class=" col-xs-3 control-label">申请人</label>
+						<label class=" col-xs-8 control-label">{$vo.name}</label>
+					</div>
+					<div class="">
+						<label class=" col-xs-1 control-label"></label>
+						<label class=" col-xs-8 control-label"><small>点击进行审批</small></label>
+					</div>
+				</div>
+				{/eq}
+			</a>
+			{/volist}
+			<hr/>	
+			<div class="form-group">
+				<label for="phone" class="col-sm-2 col-xs-1 control-label"></label>
+				<a class="btn btn-success col-sm-9 col-xs-10 btn-lg" href="javascript:void(0)" onclick="WeixinJSBridge.call('closeWindow')">返回</a>
+			</div>
+		{else /}
+			<div class="page-header ">
+				<h3 class="text-center">最近没有待审批数据！！</h3>
+			</div>
+        {/notempty}
+
+
+	</form>
+</div>
+<script>
+window.onpopstate = function(event) {
+    WeixinJSBridge.call('closeWindow');
+}
+</script>
+{/block}
+{block name="js"}
+
+{/block}

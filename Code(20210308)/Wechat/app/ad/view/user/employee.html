@@ -1,0 +1,170 @@
+{extend name="base/common"}
+{block name="body"}
+
+<div class="right_col" role="main">
+  <div class="row tile_count">
+    <div class="tile_stats_count">
+          <div class="count">员工列表 <small>员工总数：{$count.countAll}；已绑定数量：{$count.countLink}；未绑定数量：{$count.countUnlink}。</small></div> 
+    </div>
+    <div class="x_content">
+      <div class="col-lg-12 col-md-12 col-sm-12  col-xs-12" style="float: left">
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+          <select  id="check_type" name="check_type" class="form-control col-lg-2 col-md-2 col-sm-2 col-xs-2">
+            {if condition="$check_type eq 'VISPHO'"}
+              <option value="ALL">全部</option>
+              <option value="NAME">员工姓名</option>
+              <option value="PHONE">手机号码</option>
+              <option value="DEPARTMENT">所在部门</option>
+            {elseif condition="$check_type eq 'EMPNAME'"}
+              <option value="ALL">全部</option>
+              <option value="NAME">员工姓名</option>
+              <option value="PHONE">手机号码</option>
+              <option value="DEPARTMENT">所在部门</option>
+            {elseif condition="$check_type eq 'ALL'"}
+              <option value="ALL" selected="selected">全部</option>
+              <option value="NAME">员工姓名</option>
+              <option value="PHONE">手机号码</option>
+              <option value="DEPARTMENT">所在部门</option>
+            {elseif condition="$check_type eq 'NAME'"}
+              <option value="ALL">全部</option>
+              <option value="NAME" selected="selected">员工姓名</option>
+              <option value="PHONE">手机号码</option>
+              <option value="DEPARTMENT">所在部门</option>
+            {elseif condition="$check_type eq 'PHONE'"}
+              <option value="ALL">全部</option>
+              <option value="NAME">员工姓名</option>
+              <option value="PHONE" selected="selected">手机号码</option>
+              <option value="DEPARTMENT">所在部门</option>
+            {elseif condition="$check_type eq 'DEPARTMENT'"}
+              <option value="ALL">全部</option>
+              <option value="NAME">员工姓名</option>
+              <option value="PHONE">手机号码</option>
+              <option value="DEPARTMENT" selected="selected">所在部门</option>
+            {else /}
+              <option value="ALL">全部</option>
+              <option value="NAME">员工姓名</option>
+              <option value="PHONE">手机号码</option>
+              <option value="DEPARTMENT" >所在部门</option>
+            {/if}
+          </select>
+        </div>
+        <input type="text" name="check-all" id="check-all" required="required" class="col-lg-2 col-md-2 col-sm-2 col-xs-2" placeholder="请输入查询信息" style="margin-right: 20px; height: 35px;" value="{$check}">
+        <a href="javascript:;" onclick="location = 'employee?check_type='+document.getElementById('check_type').value+'&check='+document.getElementById('check-all').value;" data-toggle="popover" title="查询预约记录"><button type="button" class=" col-lg-1 col-md-1 col-sm-1 col-xs-1 btn btn-info" id="check-all-btn">查询</button></a>
+        <a href="{:url('user/employeeAdd')}" data-toggle="popover" title="手动单个添加员工信息">
+          <button type="button" class="btn btn-warning">新增员工</button>
+        </a>
+        <a href="#" data-toggle="popover" title="Excel批量录入员工信息">
+          <button type="button" class="btn btn-primary" id="employee-import"   > 批量录入 </button>
+        </a>
+        <a href="#" data-toggle="popover" title="删除选定员工信息">
+          <button type="button" class="btn btn-danger"  id="employee-del"      > 删除选定 </button>
+        </a>
+        <a href="#" data-toggle="popover" title="导出选定员工信息">
+          <button type="button" class="btn btn-success" id="employee-export"   > 导出选定 </button>
+        </a>
+
+        <a href="#" data-toggle="popover" title="导出所有员工信息">
+          <button type="button" class="btn btn-success"    id="employee-exportall"> 导出所有 </button>
+        </a>  
+
+        <a href="#" data-toggle="popover" title="导入模板">
+          <button type="button" class="btn btn-primary" id="employee-out"   > 导入模板 </button>
+        </a>
+
+      </div>       
+    </div>
+   
+    
+  </div>
+
+  <div class="table-responsive">
+      <table class="table table-striped jambo_table bulk_action">
+        <thead>
+          <tr class="headings">
+            <th>
+              <input type="checkbox" id="check-all" class="flat">
+            </th>
+            <th class="column-title"> 员工姓名 </th>
+            <th class="column-title"> 员工工号 </th>
+            <th class="column-title"> 联系方式 </th>
+            <th class="column-title"> 所在部门 </th>
+            <th class="column-title"> 账号状态 </th>
+            <th class="column-title no-link last"><span class="nobr"> 操作 </span>
+            </th>
+            <th class="bulk-actions" colspan="7">
+              <a class="antoo" style="color:#fff; font-weight:500;">Bulk Actions ( <span class="action-cnt"> </span> ) <i class="fa fa-chevron-down"></i></a>
+            </th>
+          </tr>
+        </thead>
+
+        <tbody>
+          {volist name="employee" id="vo" mod="2"}
+          {eq name="mod" value="0"}
+          <tr class="even pointer">
+          {else/}
+          <tr class="odd pointer">
+          {/eq}
+
+            <td class="a-center ">
+              <input type="checkbox" class="flat" name="table_records" value="{$vo.id}">
+            </td>
+
+            <td class=" "> {$vo.name} </td>
+            
+            <td class=" "> {$vo.code} </td>
+
+            <td class=" "> {$vo.phone} </td>
+
+            <td class=" "> {$vo.department}</td>
+
+    
+            {if condition="$vo.status eq 0"}
+            <td class="a-right a-right "> 已禁用 </td>
+            {elseif condition="$vo.status eq 1"}
+            <td class="a-right a-right "> 启用中 </td>
+            {elseif condition="$vo.status eq 2"}
+            <td class="a-right a-right "> 未绑定 </td>
+            {else /}
+            <td class="a-right a-right "> 已删除 </td>
+            {/if}
+
+            <td class=" last">
+              <a href="{:url('user/employeeDetail',array('id'=>$vo['id']))}"> 编辑 </a>
+              <a href="{:url('user/employeeDel',array('id'=>$vo['id']))}"   > 删除 </a>
+            </td>
+          </tr>
+          {/volist}
+
+        </tbody>
+      </table>
+      <div class="list-page"> {$employee->render()} </div>
+    </div>
+    <!-- <div class="container"> -->
+      <div class="modal" id="login" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-head">
+                    <a href="#" class="close" data-dismiss="modal">×</a>
+                    <h4>批量导入员工</h4>
+                </div>
+                <form class="form-horizontal" action="{:url('user/employeeImport')}" method="post" enctype="multipart/form-data">
+                  <div class="modal-body">
+                      <div class="control-group">
+                        <label class="control-label" name="username">Excel：</label>
+                        <input type="file" name="excelData" value="" id="excelData"  datatype="*4-50"  nullmsg="请填写产品！" errormsg="不能少于4个字符大于50个汉字"/>
+                        <span class="Validform_checktip"></span>
+                      </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary" id="employee-import-submit">导入</button>
+                  </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- </div> -->
+</div>
+{/block}
+{block name="js"}
+<script src="__PUBLIC__/static/ad/js/user_employee.js"></script>
+{/block}

@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="gb2312"?>
+<Configs>
+  <RegistrationField>
+    <Field name="name">
+      <required>true</required>
+    </Field>
+    <Field name="sex">
+      <required>false</required>
+    </Field>
+    <Field name="certtype">
+      <required>false</required>
+    </Field>
+    <Field name="certnum">
+      <required>true</required>
+    </Field>
+    <Field name="tel">
+      <required>false</required>
+    </Field>
+    <Field name="company">
+      <required>false</required>
+    </Field>
+    <Field name="address">
+      <required>false</required>
+    </Field>
+    <Field name="belongs">
+      <required>false</required>
+    </Field>
+    <Field name="reason">
+      <required>false</required>
+    </Field>
+    <Field name="carmsg">
+      <required>false</required>
+    </Field>
+  </RegistrationField>
+  <TelVoice>
+    <Field name="content">
+      <format>访客易提醒您，尊敬的@被访人姓名，您有客人@访客姓名 来访</format>
+    </Field>
+  </TelVoice>
+  <FastMode>
+    <Data type="bool">false</Data>
+  </FastMode>
+  <FastModeGraPhoto>
+    <Data type="bool">false</Data>
+  </FastModeGraPhoto>
+  <WGGrantDoors>
+    <Data type="string">
+    </Data>
+  </WGGrantDoors>
+  <BookVoice>
+    <Data type="bool">false</Data>
+  </BookVoice>
+  <VipVoice>
+    <Data type="bool">false</Data>
+  </VipVoice>
+  <BlackVoice>
+    <Data type="bool">false</Data>
+  </BlackVoice>
+  <PrintType>
+    <Data type="int">0</Data>
+  </PrintType>
+  <IcPrint>
+    <Data type="string">0</Data>
+  </IcPrint>
+  <FKServiceUrl>
+    <Data type="string">http://tecsun.tengenglish.cn</Data>
+  </FKServiceUrl>
+  <OpenFKService>
+    <Data type="bool">false</Data>
+  </OpenFKService>
+  <UserName>
+    <Data type="string">
+    </Data>
+  </UserName>
+  <UserPWD>
+    <Data type="string">
+    </Data>
+  </UserPWD>
+  <IsCheck>
+    <Data type="string">0</Data>
+  </IsCheck>
+  <LeaveType>
+    <Data type="string">0</Data>
+  </LeaveType>
+  <Port>
+    <Data type="int">1001</Data>
+  </Port>
+  <ShowLeave>
+    <Data type="string">0</Data>
+  </ShowLeave>
+  <HideType>
+    <Data type="string">1</Data>
+  </HideType>
+  <ShowLastVisit>
+    <Data type="string">1</Data>
+  </ShowLastVisit>
+  <MachineKind>
+    <Data type="string">ss</Data>
+  </MachineKind>
+  <SerialPort>
+    <Data type="int">9</Data>
+  </SerialPort>
+  <IpPort>
+    <Data type="string">59889</Data>
+  </IpPort>
+  <IP>
+    <Data type="string">127.0.0.1</Data>
+  </IP>
+  <ScanMachineKind>
+    <Data type="string">533U</Data>
+  </ScanMachineKind>
+  <PhoneKind>
+    <Data type="string">
+    </Data>
+  </PhoneKind>
+  <PhonePort>
+    <Data type="string">COM4</Data>
+  </PhonePort>
+  <CallSet>
+    <Data type="string">
+    </Data>
+  </CallSet>
+  <GateSentry>
+    <Data type="string">
+    </Data>
+  </GateSentry>
+  <RedPort>
+    <Data type="int">2</Data>
+  </RedPort>
+  <onlyID>
+    <Data type="string">007</Data>
+  </onlyID>
+  <IsOpen>
+    <Data type="string">0</Data>
+  </IsOpen>
+  <IsService>
+    <Data type="string">0</Data>
+  </IsService>
+  <ServicePath>
+    <Data type="string">
+    </Data>
+  </ServicePath>
+  <Filed1>
+    <Data type="string">
+    </Data>
+  </Filed1>
+  <Filed2>
+    <Data type="string">
+    </Data>
+  </Filed2>
+  <IsShowLeave>
+    <Data type="string">0</Data>
+  </IsShowLeave>
+  <AutoRunSS>
+    <Data type="string">0</Data>
+  </AutoRunSS>
+  <IcCardDay>
+    <Data type="string">
+    </Data>
+  </IcCardDay>
+  <Equipment>
+    <Data type="string">
+    </Data>
+  </Equipment>
+  <ICCardReader>
+    <Data type="string">
+    </Data>
+  </ICCardReader>
+  <DbType>
+    <Data type="int">0</Data>
+  </DbType>
+  <DbServername>
+    <Data type="string">127.0.0.1:5432</Data>
+  </DbServername>
+  <DbName>
+    <Data type="string">FKY_CY</Data>
+  </DbName>
+  <DbUser>
+    <Data type="string">postgres</Data>
+  </DbUser>
+  <DbPwd>
+    <Data type="string">vDlNIceot5A=</Data>
+  </DbPwd>
+  <DbTypeSJP>
+    <Data type="int">-1</Data>
+  </DbTypeSJP>
+  <DbServernameSJP>
+    <Data type="string">
+    </Data>
+  </DbServernameSJP>
+  <DbNameSJP>
+    <Data type="string">
+    </Data>
+  </DbNameSJP>
+  <DbUserSJP>
+    <Data type="string">
+    </Data>
+  </DbUserSJP>
+  <DbPwdSJP>
+    <Data type="string">
+    </Data>
+  </DbPwdSJP>
+  <SysPwd>
+    <Data type="string">system</Data>
+  </SysPwd>
+  <CRUserId>
+    <Data type="string">66915733240627193845</Data>
+  </CRUserId>
+  <ScanTypes>
+    <Data type="string">身份证;驾驶证;护照</Data>
+  </ScanTypes>
+  <AutoDeleteTelRec>
+    <Data type="bool">True</Data>
+  </AutoDeleteTelRec>
+  <DeleteTelRecDays>
+    <Data type="int">365</Data>
+  </DeleteTelRecDays>
+  <TelRecMaxMinutes>
+    <Data type="int">10</Data>
+  </TelRecMaxMinutes>
+  <OpenPF>
+    <Data type="bool">false</Data>
+  </OpenPF>
+  <PFUploadADRecord>
+    <Data type="bool">false</Data>
+  </PFUploadADRecord>
+  <PFUrl>
+    <Data type="string">
+    </Data>
+  </PFUrl>
+  <PFUserName>
+    <Data type="string">
+    </Data>
+  </PFUserName>
+  <PFUserPwd>
+    <Data type="string">
+    </Data>
+  </PFUserPwd>
+  <PFToken>
+    <Data type="string">tecsunPf</Data>
+  </PFToken>
+  <WGGrantDoorsWeixin>
+    <Data type="string">
+    </Data>
+  </WGGrantDoorsWeixin>
+  <WeixinAccount>
+    <Data type="string">
+    </Data>
+  </WeixinAccount>
+  <WeixinDownloadEmpLastTime>
+    <Data type="string">最近一次更新时间:无</Data>
+  </WeixinDownloadEmpLastTime>
+  <WeixinDownloadAuto>
+    <Data type="bool">false</Data>
+  </WeixinDownloadAuto>
+  <WeixinDownloadTime>
+    <Data type="string">
+    </Data>
+  </WeixinDownloadTime>
+  <SJPDownloadEmpLastTime>
+    <Data type="string">最近一次更新时间:无</Data>
+  </SJPDownloadEmpLastTime>
+  <SJPDownloadAuto>
+    <Data type="bool">false</Data>
+  </SJPDownloadAuto>
+  <SJPDownloadTime>
+    <Data type="string">
+    </Data>
+  </SJPDownloadTime>
+  <SJPCompanyName>
+    <Data type="string">一卡通</Data>
+  </SJPCompanyName>
+  <SmsCheckInContent>
+    <Data type="string">访客易提醒您，@访客姓名 刷卡登记进入拜访您。</Data>
+  </SmsCheckInContent>
+  <SmsLeaveContent>
+    <Data type="string">访客易提醒您，@访客姓名 已刷卡签离。</Data>
+  </SmsLeaveContent>
+  <AccessControlType>
+    <Data type="int">0</Data>
+  </AccessControlType>
+  <AutoDeleteOverdueCard>
+    <Data type="bool">True</Data>
+  </AutoDeleteOverdueCard>
+  <DbTypePf>
+    <Data type="int">-1</Data>
+  </DbTypePf>
+  <DbServernamePf>
+    <Data type="string">
+    </Data>
+  </DbServernamePf>
+  <DbNamePf>
+    <Data type="string">FK_Platform</Data>
+  </DbNamePf>
+  <DbUserPf>
+    <Data type="string">
+    </Data>
+  </DbUserPf>
+  <DbPwdPf>
+    <Data type="string">
+    </Data>
+  </DbPwdPf>
+  <PfServerIp>
+    <Data type="string">192.168.5.251</Data>
+  </PfServerIp>
+  <PfServerPort>
+    <Data type="string">8000</Data>
+  </PfServerPort>
+  <BaiduAK>
+    <Data type="string">Pke8GjtsNZUlkicXzG6GwhKS9eTuXurf</Data>
+  </BaiduAK>
+  <OpenFaceService>
+    <Data type="bool">true</Data>
+  </OpenFaceService>
+  <FaceIP>
+    <Data type="string">127.0.0.0</Data>
+  </FaceIP>
+  <FacePort>
+    <Data type="string">6800</Data>
+  </FacePort>
+  <FaceUser>
+    <Data type="string">admin</Data>
+  </FaceUser>
+  <FacePwd>
+    <Data type="string">admin</Data>
+  </FacePwd>
+  <FacePic>
+    <Data type="string">
+    </Data>
+  </FacePic>
+  <FaceServerIP>
+    <Data type="string">192.168.5.251</Data>
+  </FaceServerIP>
+  <FaceServerPort>
+    <Data type="string">61000</Data>
+  </FaceServerPort>
+  <FaceServerInterface>
+    <Data type="string">http://192.168.5.251:8060/PlatformService</Data>
+  </FaceServerInterface>
+  <FaceServerType>
+    <Data type="int">0</Data>
+  </FaceServerType>
+  <WeiXinServerType>
+    <Data type="int">0</Data>
+  </WeiXinServerType>
+  <CTIDUrl>
+    <Data type="string">
+    </Data>
+  </CTIDUrl>
+  <CTIDClientId>
+    <Data type="string">
+    </Data>
+  </CTIDClientId>
+  <CTIDClientSecret>
+    <Data type="string">
+    </Data>
+  </CTIDClientSecret>
+  <BaiduApiKey>
+    <Data type="string">
+    </Data>
+  </BaiduApiKey>
+  <BaiduSecretKey>
+    <Data type="string">
+    </Data>
+  </BaiduSecretKey>
+  <CPSBType>
+    <Data type="int">0</Data>
+  </CPSBType>
+  <IsOpenWxJSService>
+    <Data type="bool">false</Data>
+  </IsOpenWxJSService>
+  <JSUrl>
+    <Data type="string">
+    </Data>
+  </JSUrl>
+  <JSAccount>
+    <Data type="string">
+    </Data>
+  </JSAccount>
+  <JSPwd>
+    <Data type="string">
+    </Data>
+  </JSPwd>
+  <JSVersion>
+    <Data type="string">1.0</Data>
+  </JSVersion>
+  <JSPersonId>
+    <Data type="string">
+    </Data>
+  </JSPersonId>
+  <CPSBSrvIP>
+    <Data type="string">192.168.5.251</Data>
+  </CPSBSrvIP>
+  <CPSBSrvPort>
+    <Data type="string">51000</Data>
+  </CPSBSrvPort>
+  <TDZMonitorIP>
+    <Data type="string">192.168.5.251</Data>
+  </TDZMonitorIP>
+  <TDZMonitorPort>
+    <Data type="string">18887</Data>
+  </TDZMonitorPort>
+  <TDZIsEnableIDCardMode>
+    <Data type="bool">false</Data>
+  </TDZIsEnableIDCardMode>
+  <TDZOpenDoorDuration>
+    <Data type="string">0000</Data>
+  </TDZOpenDoorDuration>
+  <Notify>
+    <Data type="string">0</Data>
+  </Notify>
+  <OrgId>
+    <Data type="string">
+    </Data>
+  </OrgId>
+  <OpenWXSaaS>
+    <Data type="string">0</Data>
+  </OpenWXSaaS>
+  <OPIP>
+    <Data type="string">192.168.5.251</Data>
+  </OPIP>
+  <OPPort>
+    <Data type="string">8098</Data>
+  </OPPort>
+  <OPSecret>
+    <Data type="string">tecsun</Data>
+  </OPSecret>
+  <OPIPServer>
+    <Data type="string">
+    </Data>
+  </OPIPServer>
+  <OPPortServer>
+    <Data type="string">
+    </Data>
+  </OPPortServer>
+  <TDZOpenSvrIP>
+    <Data type="string">192.168.5.251</Data>
+  </TDZOpenSvrIP>
+  <TDZOpenSvrPort>
+    <Data type="string">18890</Data>
+  </TDZOpenSvrPort>
+  <IsEnableTDZOpenSvr>
+    <Data type="bool">false</Data>
+  </IsEnableTDZOpenSvr>
+  <TDZOpenSvrSecret>
+    <Data type="string">tecsun</Data>
+  </TDZOpenSvrSecret>
+  <PoliceType>
+    <Data type="int">0</Data>
+  </PoliceType>
+  <AreaTag>
+    <Data type="string">
+    </Data>
+  </AreaTag>
+  <OpenGA>
+    <Data type="bool">false</Data>
+  </OpenGA>
+  <GAAreaName>
+    <Data type="string">湖南</Data>
+  </GAAreaName>
+  <GAUnitName>
+    <Data type="string">
+    </Data>
+  </GAUnitName>
+  <GAUnitAddress>
+    <Data type="string">
+    </Data>
+  </GAUnitAddress>
+  <GAUploadIP>
+    <Data type="string">http://121.46.29.161:82</Data>
+  </GAUploadIP>
+  <GAServiceNo>
+    <Data type="string">
+    </Data>
+  </GAServiceNo>
+  <GAOrgKey>
+    <Data type="string">
+    </Data>
+  </GAOrgKey>
+  <GAUploadName>
+    <Data type="string">
+    </Data>
+  </GAUploadName>
+  <GAUploadPWD>
+    <Data type="string">
+    </Data>
+  </GAUploadPWD>
+  <GAUploadVisitor_Src>
+    <Data type="string">
+    </Data>
+  </GAUploadVisitor_Src>
+  <GARSAPublicKey>
+    <Data type="string">
+    </Data>
+  </GARSAPublicKey>
+  <DataSrvIP>
+    <Data type="string">127.0.0.1</Data>
+  </DataSrvIP>
+  <DataSrvPort>
+    <Data type="string">9098</Data>
+  </DataSrvPort>
+  <DataSrvAppId>
+    <Data type="string">tecsun</Data>
+  </DataSrvAppId>
+</Configs>

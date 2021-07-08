@@ -1,0 +1,55 @@
+{extend name="base/common"}
+{block name="body"}
+<div class="bg_fff bar pt_10 pb_30">
+    <div class="flex_row input">
+        <div class="fc_100 pl_20">访问类型:</div>
+        <input class="pl_10 fs_15 w_60" value="员工邀请" />
+    </div>
+    <div class="flex_row input">
+        <div class="fc_100 pl_20">贵宾姓名:</div>
+        <input class="pl_10 fs_15 w_60" value="{$record.name}" />
+    </div>
+    <div class="flex_row input">
+        <div class="fc_100 pl_20">贵宾手机:</div>
+        <input class="pl_10 fs_15 w_60" value="{$record.phone}" />
+    </div>
+    <div class="flex_row input">
+        <div class="fc_100 pl_20">来访事由:</div>
+        <input class="pl_10 fs_15 w_60" value="{$record.reasons}" />
+    </div>
+    <div class="flex_row input">
+        <div class="fc_100 pl_20">身份证号:</div>
+        <input class="pl_10 fs_15 w_60" value="{$record.idcard}" />
+    </div>
+    <div class="flex_row input">
+        <div class="fc_100 pl_20">车牌号码:</div>
+        <input class="pl_10 fs_15 w_60" value="{$record.car_num}" />
+    </div>
+    <div class="flex_row input">
+        <div class="fc_100 pl_20">开始时间:</div>
+        <input class="pl_10 fs_15 w_60" value="{$record.start_time|date='Y-m-d H:i',###}" />
+    </div>
+    <div class="flex_row input">
+        <div class="fc_100 pl_20">截止时间:</div>
+        <input class="pl_10 fs_15 w_60" value="{$record.end_time|date='Y-m-d H:i',###}" />
+    </div>
+</div>
+
+<div class="ewm">
+    <div class="pb_5">预约凭证</div>
+    <div class="">
+        <img  src="{$recordlog['url_img']}" width="150" />
+    </div>
+</div>
+<script>
+    window.onpopstate = function(event)
+    {
+      if (event.state.page === 'state1')
+      {
+        WeixinJSBridge.call('closeWindow');
+      }
+    }
+</script>
+{/block}
+{block name="js"}
+{/block}

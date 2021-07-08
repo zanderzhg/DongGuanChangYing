@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="gb2312"?>
+<Configs>
+  <UploadVisit>
+    <Data type="int">1</Data>
+  </UploadVisit>
+  <PoliceUrl>
+    <Data type="string">http://gznbdc.gzjd.gov.cn</Data>
+  </PoliceUrl>
+  <UnitName>
+    <Data type="string">
+    </Data>
+  </UnitName>
+  <UnitAddress>
+    <Data type="string">
+    </Data>
+  </UnitAddress>
+  <DealerCode>
+    <Data type="string">NB_GZDSZMXXKJYXGS_001</Data>
+  </DealerCode>
+  <DealerName>
+    <Data type="string">广州德生智盟信息科技有限公司</Data>
+  </DealerName>
+  <Kscode>
+    <Data type="string">
+    </Data>
+  </Kscode>
+  <KsArea>
+    <Data type="string">
+    </Data>
+  </KsArea>
+  <LegalName>
+    <Data type="string">
+    </Data>
+  </LegalName>
+  <Contact>
+    <Data type="string">
+    </Data>
+  </Contact>
+  <UinitID>
+    <Data type="string">
+    </Data>
+  </UinitID>
+</Configs>

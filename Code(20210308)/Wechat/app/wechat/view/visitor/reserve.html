@@ -1,0 +1,120 @@
+{extend name="base/common"}
+{block name="body"}
+<div>
+	<form action="#" method="post" id="form-reserve" class="form-horizontal" role="form" style="display: ;">
+		<div class="flex_row blueTitle pd_15 " style="text-align: center;">
+			<div class="pl_10">
+				<img src="__PUBLIC__/static/wechat/images/thumbnail/write.png" width="30"/>
+			</div>
+			<div class="color_fff pl_10 pt_5">我要预约-请填写预约信息</div>
+		</div>
+		
+		<div class="bg_fff bar pt_10 pb_30">
+			<div class="flex_row input">
+				<div class="fc_100 pl_20 ">来访时间:</div>
+				<input type="text"  class="pl_10 fs_15 form_datetime w_60" id="time" name="time" value="" readonly placeholder="请选择日期" />
+			</div>
+			<div class="flex_row input">
+				<div class="fc_100 pl_20">员工手机:</div>
+				<input class="pl_10 fs_15 w_60" value="" id="ephone" name="ephone" placeholder="请输入被访人手机号码"/>
+			</div>
+
+			<div class="flex_row input">
+				<div class="fc_100 pl_20">被访人姓名:</div>
+				<input class="pl_10 fs_15 w_60" value="" id="ename" readonly="true" name="ename" placeholder="自动获取"/>
+			</div>
+
+			<div class="flex_row input">
+                <div class="fc_100 pl_20  pr_12">拜访事由:</div>
+                <select class="pl_10 fs_15 w_50"  name="reasons" id="reasons">
+                    {volist name="reasons" id="vo"}
+						<option value="{$vo.value}">{$vo.value} </option>
+					{/volist}
+                </select>
+            </div>
+            <div class="flex_row input">
+                <div class="fc_100 pl_20 pr_12">进入区域:</div>
+                    <select class="pl_10 fs_15 w_50" name="quyu" id="quyu">
+                        <option value="一般生产区">一般生产区</option>
+                        <option value="综合办公区">综合办公区</option>
+                    </select>
+            </div>
+            <div class="flex_row input">
+                <div class="fc_100 pl_20 pr_12">到访厂区:</div>
+                    <select class="pl_10 fs_15 w_50" name="area" id="area">
+                        <option value="生态园">生态园</option>
+                        <option value="松山湖">松山湖</option>
+                        <option value="大朗">大朗</option>
+                        <option value="东莞长盈">东莞长盈</option>
+                        <option value="水平分厂">水平分厂</option>
+			<option value="茶山分厂">茶山分厂</option>
+                    </select>
+            </div>
+			<div class="flex_row input">
+				<div class="fc_100 pl_20">车牌号码:</div>
+				<input class="pl_10 fs_15 w_60" value="" name="car_num" placeholder="选填"/>
+			</div>
+			<div class="button_row">
+				<div  class="button mr_15"  href="javascript:void(0)" href="javascript:void(0)" id="btn-message">我的信息</div>
+				<div  class="button"  href="javascript:void(0)" id="btn-reserve" >发起预约</div>
+			</div>
+		</div>
+	</form>
+
+	<form action="#" method="post" id="form-message" class="form-horizontal" role="form" style="display: none;">
+		<div class="flex_row blueTitle pd_15 " style="text-align: center;">
+				<div class="pl_10" >
+						<img src="__PUBLIC__/static/wechat/images/thumbnail/write.png" width="30"/>
+				</div>
+				<div class="color_fff pl_10 pt_5">请填写您的信息</div>
+		</div>
+		<input id="status" value="{$user['status']}" style="display: none"></input>
+		<div class="bg_fff bar pt_10 pb_30">
+				<div class="flex_row input">
+					<div class="fc_100 pl_20">您的姓名:</div>
+					<input class="pl_10 fs_15 w_60" id="name" name="name" value="{$user['name']}"/>
+				</div>
+				<div class="flex_row input">
+					<div class="fc_100 pl_20">您的手机:</div>
+					<input class="pl_10 fs_15 w_60" id="phone" name="phone" value="{$user['phone']}"/>
+				</div>
+				<div class="flex_row input">
+					<div class="fc_100 pl_20">身份证号:</div>
+					<input class="pl_10 fs_15 w_60" id="idcard" name="idcard" placeholder="身份证号" value="{$user['idcard']}"/>
+				</div>
+                <div class="flex_row input">
+					<div class="fc_100 pl_20">您的单位:</div>
+					<input class="pl_10 fs_15 w_60" id="company" name="company" placeholder="您的单位" value="{$user['company']}"/>
+				</div>
+
+				<div  class="button"  href="javascript:void(0)" id="btn-submit">确定提交</div>
+				<div class="button_row">
+					<div  class="button mr_15"  href="javascript:void(0)" id="btn-return" style="display: none">返回预约</div>
+					<div  class="button"  href="javascript:void(0)" id="btn-modify" style="display: none">修改信息</div>
+				</div>
+		</div>
+
+		<input type="hidden" name="token" id="token" value="{$user['token']}">	
+	</form>
+</div>
+
+<script>
+
+window.onpopstate = function(event) {
+    WeixinJSBridge.call('closeWindow');  
+}
+$(".form_datetime").datetimepicker({
+  language:'zh-CN',
+  minView:"hour",
+  todayHighlight: 1,
+  format: 'yyyy-mm-dd HH:ii',
+  todayBtn:  1,
+  startDate : new Date(),
+  autoclose: 1
+});
+
+</script>
+{/block}
+{block name="js"}
+<script src="__PUBLIC__/static/wechat/js/reserve.js"  type="text/javascript"></script>
+{/block}

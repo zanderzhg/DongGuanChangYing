@@ -1,0 +1,15 @@
+Npgsql.NpgsqlException:
+对于可变字符类型来说，值太长了(30)
+Severity: 错误
+Code: 22001
+   在 Npgsql.NpgsqlState.<ProcessBackendResponses>d__0.MoveNext()
+   在 Npgsql.ForwardsOnlyDataReader.GetNextResponseObject(Boolean cleanup)
+   在 Npgsql.ForwardsOnlyDataReader.GetNextRowDescription()
+   在 Npgsql.ForwardsOnlyDataReader.NextResultInternal()
+   在 Npgsql.ForwardsOnlyDataReader..ctor(IEnumerable`1 dataEnumeration, CommandBehavior behavior, NpgsqlCommand command, NotificationThreadBlock threadBlock, Boolean preparedStatement, NpgsqlRowDescription rowDescription)
+   在 Npgsql.NpgsqlCommand.GetReader(CommandBehavior cb)
+   在 Npgsql.NpgsqlCommand.ExecuteNonQuery()
+   在 ADServer.DAL.PostgreHelper.ExecuteNonQuery(String connectionString, CommandType cmdType, String cmdText, DbParameter[] cmdParms) 位置 E:\Project\personal\东莞长盈\Code(20210308)\服务端 - 副本\源码\DAL\PostgreHelper.cs:行号 77
+   在 ADServer.DAL.D_Booking_Info.Add_API(M_Booking_Info model) 位置 E:\Project\personal\东莞长盈\Code(20210308)\服务端 - 副本\源码\DAL\partial\D_Booking_Info.cs:行号 143
+   在 ADServer.BLL.B_Booking_Info.Add_API(M_Booking_Info model) 位置 E:\Project\personal\东莞长盈\Code(20210308)\服务端 - 副本\源码\BLL\partial\B_Booking_Info.cs:行号 13
+   在 ADServer.Interface.VisitorInterface.ReceiveAppointment_API(String token, JArray lstVisitPersonVO, Int32 flag) 位置 E:\Project\personal\东莞长盈\Code(20210308)\服务端 - 副本\源码\Interface\VisitorInterfacep.cs:行号 207

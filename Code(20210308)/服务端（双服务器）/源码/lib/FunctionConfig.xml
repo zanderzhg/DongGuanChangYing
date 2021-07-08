@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="gb2312"?>
+<Configs>
+  <Function>
+    <Field name="ActiveLocal">
+      <required>true</required>
+    </Field>
+    <Field name="ActivePf">
+      <required>false</required>
+    </Field>
+    <Field name="ActinveSJP">
+      <required>false</required>
+    </Field>
+    <Field name="PfInterface">
+      <required>false</required>
+    </Field>
+    <Field name="AD">
+      <required>false</required>
+    </Field>
+    <Field name="WeiXin">
+      <required>false</required>
+    </Field>
+    <Field name="SMS">
+      <required>false</required>
+    </Field>
+    <Field name="PFUpload">
+      <required>false</required>
+    </Field>
+    <Field name="SJP">
+      <required>false</required>
+    </Field>
+    <Field name="FaceBarrier">
+      <required>false</required>
+    </Field>
+    <Field name="CPSB">
+      <required>false</required>
+    </Field>
+    <Field name="ADAPI">
+      <required>false</required>
+    </Field>
+    <Field name="PoliceUpload">
+      <required>false</required>
+    </Field>
+    <Field name="FKYDataService">
+      <required>true</required>
+    </Field>
+  </Function>
+</Configs>

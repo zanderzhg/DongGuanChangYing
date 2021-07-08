@@ -1,0 +1,63 @@
+{extend name="base/common"}
+{block name="body"}
+<div class="loginTitle flex_row">
+                <div class="f_w1 p_10">
+                    <img src='{$headimgurl}' style="width: 57px" class="br_30"/>
+                </div>
+                <div class="f_w30 mt_20 color_fff">
+                    <div class="loginName">
+                        <div class="mb_5 fs_15">{$userdetail.name}</div>
+                        <div class="loginTip p_2 fs_12">预约记录</div>
+                    </div>
+                </div>
+                <div class="mt_23 pr_20">
+                   <img src="__PUBLIC__/static/wechat/images/thumbnail/personal.png" width="30" height="30"/>
+                </div>
+            </div>
+            <div class="flex_row pt_10 pb_10 bg_fff">
+                <div class="f_w1 option br_1">
+                    <img src="__PUBLIC__/static/wechat/images/thumbnail/auditing.png"  width="25%"/>
+                    <div class="fs_12"><a href="bookrecordun">待审核记录</a></div>
+                </div>
+                <div class="f_w1 option br_1 bb_o">
+                    <img src="__PUBLIC__/static/wechat/images/thumbnail/adopt.png"  width="25%"/>
+                    <div class="fs_12"><a href="bookrecordy" class="color_o">已通过记录</a></div>
+                </div>
+                <div class="f_w1 option br_1">
+                    <img src="__PUBLIC__/static/wechat/images/thumbnail/refuse.png"  width="25%"/>
+                    <div class="fs_12"><a href="bookrecordn">已拒绝记录</a></div>
+                </div>
+                <div class="f_w1 option">
+                    <img src="__PUBLIC__/static/wechat/images/thumbnail/all.png"  width="25%"/>
+                    <div class="fs_12"><a href="bookrecord">全部记录</a></div>
+                </div>
+            </div>
+            {volist name="listy" id="vo"}
+            <div class="flex_row bg_fff bar pd_15">
+                <div class="f_w1 pl_10 pt_5">
+                    <img src="__PUBLIC__/static/wechat/images/thumbnail/touxiang.png" width="40"/>
+                </div>
+                <div class="f_w20 ">
+                    <div class="pl_20">
+                        <div class="mb_5">{$vo.name}</div>
+                        <div class="fs_12 fc_100">{$vo.start_time|date='Y年m月d日',###}</div>
+                    </div>
+                </div>
+                <div class="f_w20">
+                    <div class="pt_25 fs_12 fc_100">{$vo.start_time|date='H点i分',###}</div>
+                </div>
+                <div class="">
+                    <a href="{:url('employee/recordid',array('id'=>$vo['id']))}"><img src="__PUBLIC__/static/wechat/images/thumbnail/click.png" width="40"/></a>
+                </div>
+            </div>
+            {/volist}
+        </div>
+<script>
+window.onpopstate = function(event) {
+    WeixinJSBridge.call('closeWindow');
+}
+</script>
+{/block}
+{block name="js"}
+
+{/block}

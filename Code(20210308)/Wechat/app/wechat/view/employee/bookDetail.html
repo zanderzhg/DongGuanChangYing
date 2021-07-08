@@ -1,0 +1,85 @@
+{extend name="base/common"}
+{block name="body"}
+<div>
+            <div class="flex_row loginTitle pd_5">
+                <div class="f_w2 pl_30" >
+                    <img src="__PUBLIC__/static/wechat/images/thumbnail/login.png" width="50" class="br_30"/>
+                </div>
+                <div class="f_w1 pt_10" >
+                    <img src="__PUBLIC__/static/wechat/images/thumbnail/顶端信息页.png" width="30"/>
+                </div>
+                <div class="f_w10 pt_10">
+                    <div class="detailTip">预约记录详细信息</div>
+                </div>
+            </div>
+            
+            <div class="bg_fff bar pt_10 pb_30">
+                <div class="flex_row input">
+                    <div class="fc_100 pl_20">访客姓名:</div>
+                    <input class="pl_10 fs_15 w_60" value="刘云川" />
+                </div>
+                <div class="flex_row input">
+                    <div class="fc_100 pl_20">员工姓名:</div>
+                    <input class="pl_10 fs_15 w_60" value="刘并贞" />
+                </div>
+                <div class="flex_row input">
+                    <div class="fc_100 pl_20">来访人数:</div>
+                    <input class="pl_10 fs_15 w_60" value="1人" />
+                </div>
+                <div class="flex_row input">
+                    <div class="fc_100 pl_20">来访事由:</div>
+                    <input class="pl_10 fs_15 w_60" value="参观公司" />
+                </div>
+                <div class="flex_row input">
+                    <div class="fc_100 pl_20">开始时间:</div>
+                    <input class="pl_10 fs_15 w_60" value="2018-05-24 00:00:00" />
+                </div>
+                <div class="flex_row input">
+                    <div class="fc_100 pl_20">截止时间:</div>
+                    <input class="pl_10 fs_15 w_60" value="2018-05-25 00:00:00" />
+                </div>
+            </div>
+            
+            <div class="ewm">
+                <div class="pb_5">预约凭证</div>
+                <div class="pd_5">
+                    <img  src="__PUBLIC__/static/wechat/images/thumbnail//3a5291698d9802e6ccfa944fba8965c.png" width="150" />
+                </div>
+                </div>
+            </div>
+            
+            <div class="foot">
+                <img src="img/波浪底.png" width="100%"/>
+            </div>
+            
+            <div class="stamp">
+                <img src="__PUBLIC__/static/wechat/images/thumbnail/已通过.png" width="90"/>
+            </div>
+        </div>
+<script>
+window.onpopstate = function(event) {
+    WeixinJSBridge.call('closeWindow');
+}
+
+//按钮计时器
+function codeButton() {
+	var code = $("#code");
+	code.attr("disabled", "disabled");
+	setTimeout(function() {
+		code.css("opacity", "0.8");
+	}, 1000)
+	var time = 60;
+	var set = setInterval(function() {
+		code.val(--time + "s");
+	}, 1000);
+	setTimeout(function() {
+		code.attr("disabled", false).val("重新发送");
+		clearInterval(set);
+	}, 60000);
+}
+
+</script>
+{/block}
+{block name="js"}
+<script src="__PUBLIC__/static/wechat/js/employee_bind.js"  type="text/javascript"></script>
+{/block}

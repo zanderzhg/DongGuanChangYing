@@ -1,0 +1,4 @@
+/tecsunapi/data/get/token
+{
+    "appId": "tecsun"
+}

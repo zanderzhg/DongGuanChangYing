@@ -1,0 +1,122 @@
+body {
+	margin: 0px;
+	width: 100%;
+	font-family: "微软雅黑";
+	background-color: rgb(246,246,246);
+}
+
+.head {
+	padding: 10px;
+	color: white;
+	font-size: 1.25rem;
+	height: 40px;
+	display: flex;
+	display: -webkit-flex;
+	-webkit-justify-content: center;
+	justify-content: center;
+	 align-items: center;
+}
+
+.item{
+	display: flex;
+	display: -webkit-flex;
+	-webkit-justify-content: center;
+	justify-content: center;
+	 align-items: center;
+	 margin-bottom: 40px;
+	 margin-top: 40px;
+}
+
+ .button{
+  width: 300px;
+  color: #fff;
+  background-color:rgb(162, 172, 180);
+  border-radius: 7px;
+  height: 40px;
+ display: flex;
+  align-items: center;
+  justify-content: center;  
+  margin: auto;
+ }
+ 
+ .item-detail{
+ 	background-color: #fff;
+ 	width: 300px;
+ 	/*height: 200px;*/
+ 	border-radius: 20px;
+ 	margin: 0 auto;
+ 	  padding: 5px 1px 20px 2px;
+	/*display: flex;
+	display: -webkit-flex;
+	-webkit-justify-content: center;
+	justify-content: center;
+	 align-items: center;*/
+	 margin-bottom: 40px;
+	 margin-top: 40px;
+}
+
+.form-group{
+  width: 250px;
+  margin: 0 auto;
+  margin-top: 5px;
+  padding: 10px 0 0 0;
+  margin-bottom: 2px;
+  display: flex;
+  /*flex-direction: row;*/
+  align-items: center;
+  font-size: 17px;
+}
+
+.form-group-bind{
+	background-color: #fff;
+  width: 300px;
+  margin: 0 auto;
+  height: 38px;
+  margin-top: 8px;
+  margin-bottom: 2px;
+  display: flex;
+  /*flex-direction: row;*/
+  align-items: center;
+  font-size: 17px;
+  border-radius: 10px;
+  font-size: 13px;
+}
+.form-group-bind input{
+    /*outline：none;*/
+}
+.required{
+  /*font-size: 30px;*/
+  /*outline：none;*/
+  /*outline:medium;*/
+  /*bottom: none;*/
+  border-style:none
+}
+
+.hr{
+	 height: 0.5px;
+  background: #a7a4a4;
+  width: 250px;
+  margin: 0 auto;
+  margin-top: 5px;
+}
+
+.input1{
+	width: 60px;
+}
+
+.lable-key3{
+	margin-right:14px;
+}
+
+input{
+  width: 120px;
+}
+
+ .lable-key1{
+margin-right:24px;
+}
+
+.high{ color: red; }
+
+
+

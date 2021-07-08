@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>微信预约系统</title>
+		
+		<script src="https://cdn.bootcdn.net/ajax/libs/jquery/2.1.4/jquery.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/static/wechat/js/bind.js"></script>
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<link rel="stylesheet" href="__PUBLIC__/static/wechat/css/index1.css" />
+		<link rel="stylesheet" href="__PUBLIC__/static/wechat/css/common.css" />
+	</head>  
+
+	<body>
+<div id="result"></div>
+		<div class="head bg-blue ">
+			<img class="img-head mr-15" src="__PUBLIC__/static/wechat/images/1.png" />
+			<div class=" ">请先绑定您的信息</div>
+		</div>
+
+		<form action="#" method="post" id="bind"> 
+			<div class="box">
+				<div class="form-group-bind">
+					<img src="__PUBLIC__/static/wechat/images/4.png" class="phone-bind" />
+					<div>手机号：</div> 
+					<input type="tel" maxlength=11 id="phone" class="required" name="phone" value="" placeholder='请输入您的手机号码' />
+				</div>
+				<div class="form-group-bind">
+					<img src="__PUBLIC__/static/wechat/images/10.png" class="phone-bind" />
+					<div class="lable-key">验证码：</div>
+					<input id="ma" type="number" class="input1 required" maxlength="4" name="ma" value="" placeholder='验证码' ></input>
+					<!--<div  type="button" id="code" class="time" onclick="codeButton()" value="获取验证码">验证码</div>-->
+			
+					<input class="time" type="button" class="btn" id="code" value="获取验证码" onclick="codeButton()" style="display: none;">
+				
+				<input class="time1" type="button" class="btn" id="aaa" value="获取验证码"  style="display: inline;">
+				</div>
+			</div>
+			<div id="bbb" style="display: none;">
+			<!-- <button id="submit" class="button" > -->
+			<!-- <text>确定信息</text> -->
+		</button>
+		</div>
+		<div id="ccc" style="display: inline;">
+			<!-- <div class="button" > -->
+			<!-- <text>确定信息</text> -->
+			<!-- </div> -->
+		</div>
+		
+
+		</form>
+
+	</body>
+
+</html>

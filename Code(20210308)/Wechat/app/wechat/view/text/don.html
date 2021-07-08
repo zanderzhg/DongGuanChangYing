@@ -1,0 +1,26 @@
+{extend name="base/common"}
+{block name="body"}
+<div class="container">
+
+    <div class="page-header ">
+        <h4 class="text-center">{$message1}</h4>
+        <h4 class="text-center">{$message2}</h4>
+    </div>
+
+    <div style="text-align: center;">
+        <img src="__PUBLIC__/static/wechat/images/thumbnail/yysuccess.png" >
+    </div>
+    
+
+    <div class="button" href="javascript:void(0)" onclick="WeixinJSBridge.call('closeWindow')">确定</div>
+
+    <script>
+        window.onpopstate = function(event) {
+            WeixinJSBridge.call('closeWindow');
+        }
+    </script>
+</div>
+
+{/block}
+{block name="js"}
+{/block}

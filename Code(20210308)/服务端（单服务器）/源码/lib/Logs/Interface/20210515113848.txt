@@ -1,0 +1,13 @@
+/tecsunapi/data/update/visitor/receiveAppointment
+{
+	"flag":1,
+	"datas":[
+		{"vRecordId":759631,"vName":"覃佐华","vCertNo":"430304197504030275",
+		"vEndTime":"2021-04-19 17:30:00","vSex":"","vEmpPhone":"13713874464",
+		"vPhone":"13712300088","vCompany":"唯楚","vVisitorNum":1,
+		"vCertKindName":"身份证","vReason":"CY01146&nbsp;曝光显影试样供应商&nbsp;检讨工艺细节",
+		"vMenu":"","vStartTime":"2021-04-19 08:21:00","vBelongs":"",
+		"vLicensePlate":"","vQRCode":""}
+	],
+	"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcHBJZCI6InRlY3N1biIsImV4cCI6MTYyMTA1Njk2Mn0.qSqql035svHEIvgBIjXKWsWvzTmJeZnFN5M4PuVfWdY"
+}

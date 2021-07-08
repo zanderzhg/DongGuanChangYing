@@ -1,0 +1,140 @@
+{extend name="base/common"}
+{block name="body"}
+
+<div class="right_col" role="main">
+  <div class="row tile_count">
+    <div class="tile_stats_count">
+          <div class="count"> 员工邀请记录 </div>
+    </div>
+     <div class="x_content">
+      <div class="col-lg-12 col-md-12 col-sm-12  col-xs-12" style="float: left">
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+          <select  id="check_type" name="check_type" class="form-control col-lg-3 col-md-3 col-sm-3 col-xs-3">
+            {if condition="$check_type eq 'VISPHO'"}
+              <option value="VISNAME">访客姓名</option>
+              <option value="VISPHO" selected="selected">访客手机</option>
+              <option value="EMPNAME">员工姓名</option>
+              <option value="EMPPHO">员工手机</option>
+            {elseif condition="$check_type eq 'EMPNAME'"}
+              <option value="VISNAME">访客姓名</option>
+              <option value="VISPHO">访客手机</option>
+              <option value="EMPNAME" selected="selected">员工姓名</option>
+              <option value="EMPPHO">员工手机</option>
+            {elseif condition="$check_type eq 'EMPPHO'"}
+              <option value="VISNAME">访客姓名</option>
+              <option value="VISPHO">访客手机</option>
+              <option value="EMPNAME">员工姓名</option>
+              <option value="EMPPHO" selected="selected">员工手机</option>
+            {elseif condition="$check_type eq 'UNDONE'"}
+              <option value="VISNAME">访客姓名</option>
+              <option value="VISPHO">访客手机</option>
+              <option value="EMPNAME">员工姓名</option>
+              <option value="EMPPHO">员工手机</option>
+            {elseif condition="$check_type eq 'DONE'"}
+              <option value="VISNAME">访客姓名</option>
+              <option value="VISPHO">访客手机</option>
+              <option value="EMPNAME">员工姓名</option>
+              <option value="EMPPHO">员工手机</option>
+            {elseif condition="$check_type eq 'NONE'"}
+              <option value="VISNAME">访客姓名</option>
+              <option value="VISPHO">访客手机</option>
+              <option value="EMPNAME">员工姓名</option>
+              <option value="EMPPHO">员工手机</option>
+            {else /}
+              <option value="VISNAME" selected="selected">访客姓名</option>
+              <option value="VISPHO">访客手机</option>
+              <option value="EMPNAME">员工姓名</option>
+              <option value="EMPPHO">员工手机</option>
+            {/if}
+          </select>
+        </div>
+        <input type="text" name="check-all" id="check-all" required="required" class="col-lg-3 col-md-3 col-sm-3 col-xs-3" placeholder="请输入查询信息" style="margin-right: 20px; height: 35px;" value="{$check}">
+        <a href="javascript:;" onclick="location = 'employeeRecord?check_type='+document.getElementById('check_type').value+'&check='+document.getElementById('check-all').value;" data-toggle="popover" title="查询预约记录"><button type="button" class="col-lg-1 col-md-1 col-sm-1 col-xs-1 btn btn-info" id="check-all-btn">查询</button></a>
+
+
+        <a href="#" data-toggle="popover" title="导出选定的预约记录，包括访客预约和员工邀请"  class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+          <button type="button" class="btn btn-success"  id="record-export"> 导出选定 </button>
+        </a>
+        <a href="#" data-toggle="popover" title="导出所有的预约记录，包括访客预约和员工邀请"  class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+          <button type="button" class="btn btn-success" id="record-export-all"> 导出所有 </button>
+        </a>
+      </div>       
+    </div>
+    
+  </div>
+
+  <div class="table-responsive">
+      <table class="table table-striped jambo_table bulk_action">
+        <thead>
+          <tr class="headings">
+            <th>
+              <input type="checkbox" id="check-all" class="flat">
+            </th>
+            <!-- <th class="column-title"> 所在公司 </th> -->
+            <th class="column-title"> 访客姓名 </th>
+            <th class="column-title"> 员工姓名 </th>
+            <th class="column-title"> 约见日期 </th>
+            <!-- <th class="column-title"> 约见地址 </th> -->
+            <th class="column-title"> 记录状态 </th>
+            <th class="column-title"> 记录类型 </th>
+            <th class="column-title no-link last"><span class="nobr"> 操作 </span>
+            </th>
+            <th class="bulk-actions" colspan="8">
+              <a class="antoo" style="color:#fff; font-weight:500;">Bulk Actions ( <span class="action-cnt"> </span> ) <i class="fa fa-chevron-down"></i></a>
+            </th>
+          </tr>
+        </thead>
+
+        <tbody>
+          {volist name="allRecordres" id="vo" mod="2"}
+          {eq name="mod" value="0"}
+          <tr class="even pointer">
+          {else/}
+          <tr class="odd pointer">
+          {/eq}
+
+            <td class="a-center ">
+              <input type="checkbox" class="flat" name="table_records" value="{$vo.id}">
+            </td>
+
+            <!-- <td class=" "> {$vo.company} </td> 所在公司 -->
+            <td class=" "> {$vo.name} </td>  <!-- 访客姓名 -->
+            <td class=" "> {$vo.ename} </td>  <!-- 员工姓名 -->
+            <td class=" "> {$vo.start_time|date="Y-m-d",###} </td>  <!-- 约见时间 -->
+            <!-- <td class=" "> {$vo.address} </td> -->  <!-- 约见地址 -->
+
+            {if condition="$vo.status eq 0"}
+              <td class="a-right a-right "> 未回复 </td>
+            {elseif condition="$vo.status eq 1"}
+              <td class="a-right a-right "> 已允许 </td>
+            {elseif condition="$vo.status eq 2"}
+              <td class="a-right a-right "> 已拒绝 </td>
+            {elseif condition="$vo.status eq 3"}
+             <td class="a-right a-right "> 已邀请 </td>
+            {else /}
+              <td class="a-right a-right "> 已删除 </td>
+            {/if}
+
+            {if condition="$vo.visittype eq 0"}
+              <td class="a-right a-right "> 访客预约 </td>
+            {else /}
+              <td class="a-right a-right "> 员工邀请 </td>
+            {/if}
+  
+            <input type="hidden" id="type" value="{$type}">
+            <td class=" last">
+              <a href="{:url('recordDetail',array('id'=>$vo['id']))}"> 详情 </a>
+              <a href="{:url('recordDel',array('id'=>$vo['id']))}"> 删除 </a>
+            </td>
+          </tr>
+          {/volist}
+
+        </tbody>
+      </table>
+    <div class="list-page">{$allRecordres->render()}</div>
+    </div>
+</div>
+{/block}
+{block name="js"}
+<script src="__PUBLIC__/static/ad/js/record.js"></script>
+{/block}

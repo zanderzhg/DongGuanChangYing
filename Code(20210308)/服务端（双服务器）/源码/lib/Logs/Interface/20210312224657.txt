@@ -1,0 +1,23 @@
+/tecsunapi/data/update/visitor/receiveAppointment
+{
+    "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJhcHBJZCI6InRlY3N1biIsImV4cCI6MTYxNTU2NjkzMH0.4uQ32odC9l30zBPk49bJwJeO4iSXNTUfh6RRAJqNX8E",
+    "flag": 1,
+    "datas": [
+        {
+            "vRecordId": 3,
+            "vCertKindName": "1",
+            "vCertNo": "44xxxxx6735",
+            "vName": "hkh",
+            "vPhone": "14xxxxxxx68",
+            "vCompany": "探索",
+            "vQRCode": "41164564",
+            "vReason": "面试",
+            "vSex": "男",
+            "vEmpPhone": "14xxxxxx8",
+            "vStartTime": "2019-09-12 00:00:00",
+            "vEndTime": "2019-09-13 13:46:29",
+            "vLicensePlate": "粤xxxxxx",
+            "VisitNum": 1
+        }
+    ]
+}

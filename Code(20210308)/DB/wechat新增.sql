@@ -1,0 +1,1 @@
+ALTER TABLE wx_record ADD areaTag varchar(24) NULL;   --预约的区域

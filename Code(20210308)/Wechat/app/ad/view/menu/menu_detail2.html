@@ -1,0 +1,198 @@
+{extend name="base/common"}
+{block name="body"}
+
+<div class="right_col" role="main">
+  <div class="clearfix">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="x_panel">
+          <div class="x_title">
+            <h2> 自定义菜单 <small> 二级自定菜单 </small></h2>
+            <ul class="nav navbar-right panel_toolbox">
+              <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
+              <li><a class="close-link"><i class="fa fa-close"></i></a>
+              </li>
+            </ul>
+            <div class="clearfix"></div>
+          </div>
+          <div class="x_content">
+            <br />
+            <form id="demo-form2" method="post" data-parsley-validate class="form-horizontal form-label-left">
+
+              <input type="hidden" name="id">
+
+              <div class="form-group">
+                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="menuName"> 菜单名称 </label>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                  <input type="text" id="menuName" name="menuName" required="required" class="form-control col-md-7 col-xs-12" placeholder="必填" value="{$menu.name}">
+                </div>
+              </div>
+
+              <input id="menu_type" value="{$menu.type}" hidden />
+
+              <div class="form-group" id="url">
+                <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12"> 菜单类型 </label>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                  <select  id="menuType1" name="menuType" onchange="selectType1()"  class="form-control col-md-7 col-xs-12" >
+                    <option value="{$menu.type}">{$menu.type}</option>
+                    <option value="KEY">KEY</option>
+                    <option value="URL">URL</option>
+                  </select>
+                </div>
+              </div>
+
+              <!--  <div class="form-group" id="key">
+                <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12"> 菜单类型 </label>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                  <select  id="menuType" name="menuType" onchange="selectType()"  class="form-control col-md-7 col-xs-12" >
+                    <option value="{$menu.type}">{$menu.type}</option>
+                    <option value="KEY">KEY</option>
+                    <option value="URL">URL</option>
+                  </select>
+                </div>
+              </div> -->
+
+
+             
+
+              <div class="form-group" id="keyValue">
+                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="URL"> VALUE </label>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                  <input type="text" id="menuValueKey" name="menuValueKey"  class="form-control col-md-7 col-xs-12" placeholder="必填" value="{$menu.value}">
+                </div>
+              </div>
+
+               <div class="form-group" id="urlValue">
+                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="URL"> VALUE </label>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                  <input type="text" onblur="Url()" id="menuValue" name="menuValue"  class="form-control col-md-7 col-xs-12" placeholder="必填" value="{$menu.value}">
+                </div>
+              </div>
+
+
+
+              <div class="form-group">
+                <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12"> 优先级 </label>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                  <select  id="menuPosition" name="menuPosition" class="form-control col-md-7 col-xs-12">
+                    <option value="{$menu.position}">{$menu.position_name}</option>
+                    {volist name="diff_menu_dat" id="vo"}
+                     <option value="{$vo.position}">{$vo.position_name}</option>
+                    {/volist}
+                  </select>
+                </div>
+              </div>
+
+              <input type="hidden" name="id" value="{$menu.id}">
+              <input type="hidden" name="mid" value="{$menu.mid}">
+              <div class="ln_solid"></div>
+              <div class="form-group">
+                <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3">
+                  <button class="btn btn-primary" type="button" id="btn-back"> 返回 </button>
+                  <button class="btn btn-primary" type="reset">  重置 </button>
+                  <button class="btn btn-success" type="submit" id="btn-sub"> 提交 </button>
+                </div>
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+    
+</div>
+{/block}
+{block name="js"}
+<script src="__PUBLIC__/static/ad/js/user_visitordetail.js"></script>
+<script type="text/javascript">
+
+      $(document).ready(function(){ 
+        // alert(document.getElementById("menu_type").value);
+        if(document.getElementById("menu_type").value=='URL')
+          {
+            $("#keyValue").addClass("hidden");
+            $("#urlValue").removeClass("hidden");
+            // $("#url").removeClass("hidden");
+            // $("#key").addClass("hidden");
+          }else{
+            $("#urlValue").addClass("hidden");
+            $("#keyValue").removeClass("hidden");
+            // $("#key").removeClass("hidden");
+            // $("#url").addClass("hidden");
+          }
+      });
+
+
+// window.onload=function(){
+ 
+//  alert({document.getElementById("menu_type").value});
+ 
+ 
+// }
+      // $('#menuValue').bind('input propertychange', function() {
+      //   // alert("1111");
+      //         var menuValue = ($(this).val());
+      //         var str = /^(?=^.{3,255}$)(http(s)?:\/\/)?(www\.)?[a-zA-Z0-9][-a-zA-Z0-9]{0,62}(\.[a-zA-Z0-9][-a-zA-Z0-9]{0,62})+(:\d+)*(\/\w+\.\w+)*([\?&]\w+=\w*)*$/;  //定义约束
+      //          if(str.test(menuValue)) {
+      //           return true;
+      //          }else{
+      //             alert("网址输入错误");
+      //                 return false;
+      //          }
+      // });
+
+      function Url() {
+                  var menuValue = document.getElementById("menuValue").value; //获取你所填写的信息
+                  var menuValueReg = /^(?=^.{3,255}$)(http(s)?:\/\/)?(www\.)?[a-zA-Z0-9][-a-zA-Z0-9]{0,62}(\.[a-zA-Z0-9][-a-zA-Z0-9]{0,62})+(:\d+)*(\/\w+\.\w+)*([\?&]\w+=\w*)*$/;  //定义约束
+                  if (!menuValueReg.test(menuValue)) {   //判断
+                     alert("网址输入错误");
+                     // alert(menuValue);
+                      return false;
+                  }
+                  else {
+                      // alert("网址输入正确");
+                      return true;
+                  }
+              }
+
+     function selectType() {
+                var v  = document.getElementById("menuType").value;
+                // alert(v);
+                if(v=="KEY"){
+                  // alert("k");
+                  $("#keyValue").removeClass("hidden");
+                  $("#urlValue").addClass("hidden");
+                }                  
+                else{
+                  // alert("u");
+                  $("#keyValue").addClass("hidden");
+                  $("#urlValue").removeClass("hidden");
+                }
+            };
+
+    function selectType1() {
+              var v  = document.getElementById("menuType1").value;
+              alert(v);
+              if(v=="KEY"){
+                // alert("k");
+                $("#keyValue").removeClass("hidden");
+                $("#urlValue").addClass("hidden");
+              }                  
+              else{
+                // alert("u");
+                $("#keyValue").addClass("hidden");
+                $("#urlValue").removeClass("hidden");
+              }
+          };
+
+        // $('#menuType').change(function(){ 
+        //   alert("1111");
+        //   var r  = document.getElementById("menuType").value;
+        //           alert(r);
+        // });
+
+
+</script>
+{/block}

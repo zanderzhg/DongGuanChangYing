@@ -1,0 +1,284 @@
+F:\项目\2019\2019-9\fangkeyiserver\源码\lib\ADServer.exe.config
+F:\项目\2019\2019-9\fangkeyiserver\源码\obj\x86\Debug\Interop.NetFwTypeLib.dll
+F:\项目\2019\2019-9\fangkeyiserver\源码\obj\x86\Debug\ADServer.csproj.ResolveComReference.cache
+F:\项目\2019\2019-9\fangkeyiserver\源码\obj\x86\Debug\ADServer.exe
+F:\项目\2019\2019-9\fangkeyiserver\源码\obj\x86\Debug\ADServer.pdb
+F:\项目\2019\2019-9\fangkeyiserver\源码\lib\ADServer.exe
+F:\项目\2019\2019-9\fangkeyiserver\源码\lib\ADServer.pdb
+F:\项目\2019\2019-9\fangkeyiserver\源码\lib\N1_SadpTools.dll
+F:\项目\2019\2019-9\fangkeyiserver\源码\lib\Npgsql.dll
+F:\项目\2019\2019-9\fangkeyiserver\源码\lib\Mono.Security.dll
+F:\项目\2019\2019-9\fangkeyiserver\源码\lib\System.Web.Http.dll
+F:\项目\2019\2019-9\fangkeyiserver\源码\lib\log4net.dll
+F:\项目\2019\2019-9\fangkeyiserver\源码\lib\System.Web.Http.WebHost.dll
+F:\项目\2019\2019-9\fangkeyiserver\源码\lib\System.Net.Http.dll
+F:\项目\2019\2019-9\fangkeyiserver\源码\lib\System.Net.Http.Formatting.dll
+F:\项目\2019\2019-9\fangkeyiserver\源码\lib\EntityFramework.xml
+F:\项目\2019\2019-9\fangkeyiserver\源码\lib\System.Web.Http.xml
+F:\项目\2019\2019-9\fangkeyiserver\源码\lib\log4net.pdb
+F:\项目\2019\2019-9\fangkeyiserver\源码\lib\log4net.xml
+F:\项目\2019\2019-9\fangkeyiserver\源码\lib\System.Web.Http.WebHost.xml
+F:\项目\2019\2019-9\fangkeyiserver\源码\lib\System.Net.Http.xml
+F:\项目\2019\2019-9\fangkeyiserver\源码\lib\System.Net.Http.Formatting.xml
+F:\项目\2019\2019-9\fangkeyiserver\源码\lib\zh-Hans\System.Web.Http.resources.dll
+F:\项目\2019\2019-9\fangkeyiserver\源码\lib\zh-Hans\System.Web.Http.WebHost.resources.dll
+F:\项目\2019\2019-9\fangkeyiserver\源码\lib\zh-Hans\System.Net.Http.resources.dll
+F:\项目\2019\2019-9\fangkeyiserver\源码\lib\zh-Hans\System.Net.Http.Formatting.resources.dll
+F:\项目\2019\2019-9\fangkeyiserver\源码\obj\x86\Debug\ADServer.csprojResolveAssemblyReference.cache
+F:\项目\2019\2019-9\fangkeyiserver\源码\obj\x86\Debug\ADServer.ADMain.resources
+F:\项目\2019\2019-9\fangkeyiserver\源码\obj\x86\Debug\ADServer.Dlg_DoorName.resources
+F:\项目\2019\2019-9\fangkeyiserver\源码\obj\x86\Debug\ADServer.Dlg_Passageway.resources
+F:\项目\2019\2019-9\fangkeyiserver\源码\obj\x86\Debug\ADServer.Dlg_SelectLocalIP.resources
+F:\项目\2019\2019-9\fangkeyiserver\源码\obj\x86\Debug\ADServer.Dlg_SetHttpParams.resources
+F:\项目\2019\2019-9\fangkeyiserver\源码\obj\x86\Debug\ADServer.Dlg_WGTimeControl.resources
+F:\项目\2019\2019-9\fangkeyiserver\源码\obj\x86\Debug\ADServer.Frm_InitDatabase.resources
+F:\项目\2019\2019-9\fangkeyiserver\源码\obj\x86\Debug\ADServer.Frm_Reg.resources
+F:\项目\2019\2019-9\fangkeyiserver\源码\obj\x86\Debug\ADServer.Frm_SearchAccessController.resources
+F:\项目\2019\2019-9\fangkeyiserver\源码\obj\x86\Debug\ADServer.Frm_SearchAccessController_JS.resources
+F:\项目\2019\2019-9\fangkeyiserver\源码\obj\x86\Debug\ADServer.Frm_SearchAccessController_TDZ.resources
+F:\项目\2019\2019-9\fangkeyiserver\源码\obj\x86\Debug\FKY_CMP.ViewBack.Frm_SearchN1Device.resources
+F:\项目\2019\2019-9\fangkeyiserver\源码\obj\x86\Debug\ADServer.Frm_SMSFormat.resources
+F:\项目\2019\2019-9\fangkeyiserver\源码\obj\x86\Debug\ADServer.Frm_TcpIpConfigure.resources
+F:\项目\2019\2019-9\fangkeyiserver\源码\obj\x86\Debug\ADServer.Frm_TcpIpConfigureTDZ.resources
+F:\项目\2019\2019-9\fangkeyiserver\源码\obj\x86\Debug\ADServer.Frm_Version.resources
+F:\项目\2019\2019-9\fangkeyiserver\源码\obj\x86\Debug\ADServer.InitForm.resources
+F:\项目\2019\2019-9\fangkeyiserver\源码\obj\x86\Debug\ADServer.Properties.Resources.resources
+F:\项目\2019\2019-9\fangkeyiserver\源码\obj\x86\Debug\ADServer.Dlg_SetAllHttpParams.resources
+F:\项目\2019\2019-9\fangkeyiserver\源码\obj\x86\Debug\ADServer.csproj.GenerateResource.Cache
+F:\项目\2019\访客易服务端\fangkeyiserver\源码\lib\ADServer.exe.config
+F:\项目\2019\访客易服务端\fangkeyiserver\源码\obj\x86\Debug\Interop.NetFwTypeLib.dll
+F:\项目\2019\访客易服务端\fangkeyiserver\源码\obj\x86\Debug\ADServer.csproj.ResolveComReference.cache
+F:\项目\2019\访客易服务端\fangkeyiserver\源码\obj\x86\Debug\ADServer.exe
+F:\项目\2019\访客易服务端\fangkeyiserver\源码\obj\x86\Debug\ADServer.pdb
+F:\项目\2019\访客易服务端\fangkeyiserver\源码\lib\ADServer.exe
+F:\项目\2019\访客易服务端\fangkeyiserver\源码\lib\ADServer.pdb
+F:\项目\2019\访客易服务端\fangkeyiserver\源码\lib\N1_SadpTools.dll
+F:\项目\2019\访客易服务端\fangkeyiserver\源码\lib\Npgsql.dll
+F:\项目\2019\访客易服务端\fangkeyiserver\源码\lib\System.Web.Http.dll
+F:\项目\2019\访客易服务端\fangkeyiserver\源码\lib\System.Web.Http.WebHost.dll
+F:\项目\2019\访客易服务端\fangkeyiserver\源码\lib\System.Net.Http.dll
+F:\项目\2019\访客易服务端\fangkeyiserver\源码\lib\System.Net.Http.Formatting.dll
+F:\项目\2019\访客易服务端\fangkeyiserver\源码\lib\System.Web.Http.xml
+F:\项目\2019\访客易服务端\fangkeyiserver\源码\lib\System.Web.Http.WebHost.xml
+F:\项目\2019\访客易服务端\fangkeyiserver\源码\lib\System.Net.Http.xml
+F:\项目\2019\访客易服务端\fangkeyiserver\源码\lib\System.Net.Http.Formatting.xml
+F:\项目\2019\访客易服务端\fangkeyiserver\源码\lib\zh-Hans\System.Web.Http.resources.dll
+F:\项目\2019\访客易服务端\fangkeyiserver\源码\lib\zh-Hans\System.Web.Http.WebHost.resources.dll
+F:\项目\2019\访客易服务端\fangkeyiserver\源码\lib\zh-Hans\System.Net.Http.resources.dll
+F:\项目\2019\访客易服务端\fangkeyiserver\源码\lib\zh-Hans\System.Net.Http.Formatting.resources.dll
+F:\项目\2019\访客易服务端\fangkeyiserver\源码\obj\x86\Debug\ADServer.ADMain.resources
+F:\项目\2019\访客易服务端\fangkeyiserver\源码\obj\x86\Debug\ADServer.Dlg_DoorName.resources
+F:\项目\2019\访客易服务端\fangkeyiserver\源码\obj\x86\Debug\ADServer.Dlg_Passageway.resources
+F:\项目\2019\访客易服务端\fangkeyiserver\源码\obj\x86\Debug\ADServer.Dlg_SelectLocalIP.resources
+F:\项目\2019\访客易服务端\fangkeyiserver\源码\obj\x86\Debug\ADServer.Dlg_SetHttpParams.resources
+F:\项目\2019\访客易服务端\fangkeyiserver\源码\obj\x86\Debug\ADServer.Dlg_WGTimeControl.resources
+F:\项目\2019\访客易服务端\fangkeyiserver\源码\obj\x86\Debug\ADServer.Frm_InitDatabase.resources
+F:\项目\2019\访客易服务端\fangkeyiserver\源码\obj\x86\Debug\ADServer.Frm_Reg.resources
+F:\项目\2019\访客易服务端\fangkeyiserver\源码\obj\x86\Debug\ADServer.Frm_SearchAccessController.resources
+F:\项目\2019\访客易服务端\fangkeyiserver\源码\obj\x86\Debug\ADServer.Frm_SearchAccessController_JS.resources
+F:\项目\2019\访客易服务端\fangkeyiserver\源码\obj\x86\Debug\ADServer.Frm_SearchAccessController_TDZ.resources
+F:\项目\2019\访客易服务端\fangkeyiserver\源码\obj\x86\Debug\FKY_CMP.ViewBack.Frm_SearchN1Device.resources
+F:\项目\2019\访客易服务端\fangkeyiserver\源码\obj\x86\Debug\ADServer.Frm_SMSFormat.resources
+F:\项目\2019\访客易服务端\fangkeyiserver\源码\obj\x86\Debug\ADServer.Frm_TcpIpConfigure.resources
+F:\项目\2019\访客易服务端\fangkeyiserver\源码\obj\x86\Debug\ADServer.Frm_TcpIpConfigureTDZ.resources
+F:\项目\2019\访客易服务端\fangkeyiserver\源码\obj\x86\Debug\ADServer.Frm_Version.resources
+F:\项目\2019\访客易服务端\fangkeyiserver\源码\obj\x86\Debug\ADServer.InitForm.resources
+F:\项目\2019\访客易服务端\fangkeyiserver\源码\obj\x86\Debug\ADServer.Properties.Resources.resources
+F:\项目\2019\访客易服务端\fangkeyiserver\源码\obj\x86\Debug\ADServer.Dlg_SetAllHttpParams.resources
+F:\项目\2019\访客易服务端\fangkeyiserver\源码\obj\x86\Debug\ADServer.csproj.GenerateResource.Cache
+F:\项目\2019\2019-10\fky_cy\服务端\源码\lib\ADServer.exe.config
+F:\项目\2019\2019-10\fky_cy\服务端\源码\obj\x86\Debug\Interop.NetFwTypeLib.dll
+F:\项目\2019\2019-10\fky_cy\服务端\源码\obj\x86\Debug\ADServer.csproj.ResolveComReference.cache
+F:\项目\2019\2019-10\fky_cy\服务端\源码\obj\x86\Debug\ADServer.exe
+F:\项目\2019\2019-10\fky_cy\服务端\源码\obj\x86\Debug\ADServer.pdb
+F:\项目\2019\2019-10\fky_cy\服务端\源码\lib\ADServer.exe
+F:\项目\2019\2019-10\fky_cy\服务端\源码\lib\ADServer.pdb
+F:\项目\2019\2019-10\fky_cy\服务端\源码\lib\FKY_WCFLibrary.dll
+F:\项目\2019\2019-10\fky_cy\服务端\源码\lib\N1_SadpTools.dll
+F:\项目\2019\2019-10\fky_cy\服务端\源码\lib\Npgsql.dll
+F:\项目\2019\2019-10\fky_cy\服务端\源码\lib\System.Web.Http.dll
+F:\项目\2019\2019-10\fky_cy\服务端\源码\lib\System.Web.Http.WebHost.dll
+F:\项目\2019\2019-10\fky_cy\服务端\源码\lib\System.Net.Http.dll
+F:\项目\2019\2019-10\fky_cy\服务端\源码\lib\System.Net.Http.Formatting.dll
+F:\项目\2019\2019-10\fky_cy\服务端\源码\lib\FKY_WCFLibrary.pdb
+F:\项目\2019\2019-10\fky_cy\服务端\源码\lib\System.Web.Http.xml
+F:\项目\2019\2019-10\fky_cy\服务端\源码\lib\System.Web.Http.WebHost.xml
+F:\项目\2019\2019-10\fky_cy\服务端\源码\lib\System.Net.Http.xml
+F:\项目\2019\2019-10\fky_cy\服务端\源码\lib\System.Net.Http.Formatting.xml
+F:\项目\2019\2019-10\fky_cy\服务端\源码\lib\zh-Hans\System.Web.Http.resources.dll
+F:\项目\2019\2019-10\fky_cy\服务端\源码\lib\zh-Hans\System.Web.Http.WebHost.resources.dll
+F:\项目\2019\2019-10\fky_cy\服务端\源码\lib\zh-Hans\System.Net.Http.resources.dll
+F:\项目\2019\2019-10\fky_cy\服务端\源码\lib\zh-Hans\System.Net.Http.Formatting.resources.dll
+F:\项目\2019\2019-10\fky_cy\服务端\源码\obj\x86\Debug\ADServer.csprojResolveAssemblyReference.cache
+F:\项目\2019\2019-10\fky_cy\服务端\源码\obj\x86\Debug\ADServer.ADMain.resources
+F:\项目\2019\2019-10\fky_cy\服务端\源码\obj\x86\Debug\ADServer.Dlg_DoorName.resources
+F:\项目\2019\2019-10\fky_cy\服务端\源码\obj\x86\Debug\ADServer.Dlg_Passageway.resources
+F:\项目\2019\2019-10\fky_cy\服务端\源码\obj\x86\Debug\ADServer.Dlg_SelectLocalIP.resources
+F:\项目\2019\2019-10\fky_cy\服务端\源码\obj\x86\Debug\ADServer.Dlg_SetHttpParams.resources
+F:\项目\2019\2019-10\fky_cy\服务端\源码\obj\x86\Debug\ADServer.Dlg_WGTimeControl.resources
+F:\项目\2019\2019-10\fky_cy\服务端\源码\obj\x86\Debug\ADServer.Frm_InitDatabase.resources
+F:\项目\2019\2019-10\fky_cy\服务端\源码\obj\x86\Debug\ADServer.Frm_Reg.resources
+F:\项目\2019\2019-10\fky_cy\服务端\源码\obj\x86\Debug\ADServer.Frm_SearchAccessController.resources
+F:\项目\2019\2019-10\fky_cy\服务端\源码\obj\x86\Debug\ADServer.Frm_SearchAccessController_JS.resources
+F:\项目\2019\2019-10\fky_cy\服务端\源码\obj\x86\Debug\ADServer.Frm_SearchAccessController_TDZ.resources
+F:\项目\2019\2019-10\fky_cy\服务端\源码\obj\x86\Debug\FKY_CMP.ViewBack.Frm_SearchN1Device.resources
+F:\项目\2019\2019-10\fky_cy\服务端\源码\obj\x86\Debug\ADServer.Frm_SMSFormat.resources
+F:\项目\2019\2019-10\fky_cy\服务端\源码\obj\x86\Debug\ADServer.Frm_TcpIpConfigure.resources
+F:\项目\2019\2019-10\fky_cy\服务端\源码\obj\x86\Debug\ADServer.Frm_TcpIpConfigureTDZ.resources
+F:\项目\2019\2019-10\fky_cy\服务端\源码\obj\x86\Debug\ADServer.Frm_Version.resources
+F:\项目\2019\2019-10\fky_cy\服务端\源码\obj\x86\Debug\ADServer.InitForm.resources
+F:\项目\2019\2019-10\fky_cy\服务端\源码\obj\x86\Debug\ADServer.Properties.Resources.resources
+F:\项目\2019\2019-10\fky_cy\服务端\源码\obj\x86\Debug\ADServer.Dlg_SetAllHttpParams.resources
+F:\项目\2019\2019-10\fky_cy\服务端\源码\obj\x86\Debug\ADServer.csproj.GenerateResource.Cache
+F:\项目\2019\2019-10\fky_cy\服务端\源码\lib\Mono.Security.dll
+F:\项目\2019\2019-10\fky_cy\服务端\源码\lib\log4net.dll
+F:\项目\2019\2019-10\fky_cy\服务端\源码\lib\EntityFramework.xml
+F:\项目\2019\2019-10\fky_cy\服务端\源码\lib\log4net.pdb
+F:\项目\2019\2019-10\fky_cy\服务端\源码\lib\log4net.xml
+E:\Project\personal\东莞长盈\Code(20210308)\服务端\源码\lib\ADServer.exe.config
+E:\Project\personal\东莞长盈\Code(20210308)\服务端\源码\obj\x86\Debug\Interop.NetFwTypeLib.dll
+E:\Project\personal\东莞长盈\Code(20210308)\服务端\源码\obj\x86\Debug\ADServer.csproj.ResolveComReference.cache
+E:\Project\personal\东莞长盈\Code(20210308)\服务端\源码\obj\x86\Debug\ADServer.exe
+E:\Project\personal\东莞长盈\Code(20210308)\服务端\源码\obj\x86\Debug\ADServer.pdb
+E:\Project\personal\东莞长盈\Code(20210308)\服务端\源码\lib\ADServer.exe
+E:\Project\personal\东莞长盈\Code(20210308)\服务端\源码\lib\ADServer.pdb
+E:\Project\personal\东莞长盈\Code(20210308)\服务端\源码\lib\N1_SadpTools.dll
+E:\Project\personal\东莞长盈\Code(20210308)\服务端\源码\lib\Npgsql.dll
+E:\Project\personal\东莞长盈\Code(20210308)\服务端\源码\lib\Mono.Security.dll
+E:\Project\personal\东莞长盈\Code(20210308)\服务端\源码\lib\System.Web.Http.dll
+E:\Project\personal\东莞长盈\Code(20210308)\服务端\源码\lib\log4net.dll
+E:\Project\personal\东莞长盈\Code(20210308)\服务端\源码\lib\System.Web.Http.WebHost.dll
+E:\Project\personal\东莞长盈\Code(20210308)\服务端\源码\lib\System.Net.Http.dll
+E:\Project\personal\东莞长盈\Code(20210308)\服务端\源码\lib\System.Net.Http.Formatting.dll
+E:\Project\personal\东莞长盈\Code(20210308)\服务端\源码\lib\EntityFramework.xml
+E:\Project\personal\东莞长盈\Code(20210308)\服务端\源码\lib\FKY_WCFLibrary.pdb
+E:\Project\personal\东莞长盈\Code(20210308)\服务端\源码\lib\System.Web.Mvc.xml
+E:\Project\personal\东莞长盈\Code(20210308)\服务端\源码\lib\System.Web.Http.xml
+E:\Project\personal\东莞长盈\Code(20210308)\服务端\源码\lib\log4net.pdb
+E:\Project\personal\东莞长盈\Code(20210308)\服务端\源码\lib\log4net.xml
+E:\Project\personal\东莞长盈\Code(20210308)\服务端\源码\lib\System.Web.Http.WebHost.xml
+E:\Project\personal\东莞长盈\Code(20210308)\服务端\源码\lib\System.Net.Http.xml
+E:\Project\personal\东莞长盈\Code(20210308)\服务端\源码\lib\System.Net.Http.Formatting.xml
+E:\Project\personal\东莞长盈\Code(20210308)\服务端\源码\lib\zh-Hans\System.Web.Http.resources.dll
+E:\Project\personal\东莞长盈\Code(20210308)\服务端\源码\lib\zh-Hans\System.Web.Http.WebHost.resources.dll
+E:\Project\personal\东莞长盈\Code(20210308)\服务端\源码\lib\zh-Hans\System.Net.Http.resources.dll
+E:\Project\personal\东莞长盈\Code(20210308)\服务端\源码\lib\zh-Hans\System.Net.Http.Formatting.resources.dll
+E:\Project\personal\东莞长盈\Code(20210308)\服务端\源码\obj\x86\Debug\ADServer.csprojResolveAssemblyReference.cache
+E:\Project\personal\东莞长盈\Code(20210308)\服务端\源码\obj\x86\Debug\ADServer.ADMain.resources
+E:\Project\personal\东莞长盈\Code(20210308)\服务端\源码\obj\x86\Debug\ADServer.Dlg_DoorName.resources
+E:\Project\personal\东莞长盈\Code(20210308)\服务端\源码\obj\x86\Debug\ADServer.Dlg_Passageway.resources
+E:\Project\personal\东莞长盈\Code(20210308)\服务端\源码\obj\x86\Debug\ADServer.Dlg_SelectLocalIP.resources
+E:\Project\personal\东莞长盈\Code(20210308)\服务端\源码\obj\x86\Debug\ADServer.Dlg_SetHttpParams.resources
+E:\Project\personal\东莞长盈\Code(20210308)\服务端\源码\obj\x86\Debug\ADServer.Dlg_WGTimeControl.resources
+E:\Project\personal\东莞长盈\Code(20210308)\服务端\源码\obj\x86\Debug\ADServer.Frm_InitDatabase.resources
+E:\Project\personal\东莞长盈\Code(20210308)\服务端\源码\obj\x86\Debug\ADServer.Frm_Reg.resources
+E:\Project\personal\东莞长盈\Code(20210308)\服务端\源码\obj\x86\Debug\ADServer.Frm_SearchAccessController.resources
+E:\Project\personal\东莞长盈\Code(20210308)\服务端\源码\obj\x86\Debug\ADServer.Frm_SearchAccessController_JS.resources
+E:\Project\personal\东莞长盈\Code(20210308)\服务端\源码\obj\x86\Debug\ADServer.Frm_SearchAccessController_TDZ.resources
+E:\Project\personal\东莞长盈\Code(20210308)\服务端\源码\obj\x86\Debug\FKY_CMP.ViewBack.Frm_SearchN1Device.resources
+E:\Project\personal\东莞长盈\Code(20210308)\服务端\源码\obj\x86\Debug\ADServer.Frm_SMSFormat.resources
+E:\Project\personal\东莞长盈\Code(20210308)\服务端\源码\obj\x86\Debug\ADServer.Frm_TcpIpConfigure.resources
+E:\Project\personal\东莞长盈\Code(20210308)\服务端\源码\obj\x86\Debug\ADServer.Frm_TcpIpConfigureTDZ.resources
+E:\Project\personal\东莞长盈\Code(20210308)\服务端\源码\obj\x86\Debug\ADServer.Frm_Version.resources
+E:\Project\personal\东莞长盈\Code(20210308)\服务端\源码\obj\x86\Debug\ADServer.InitForm.resources
+E:\Project\personal\东莞长盈\Code(20210308)\服务端\源码\obj\x86\Debug\ADServer.Properties.Resources.resources
+E:\Project\personal\东莞长盈\Code(20210308)\服务端\源码\obj\x86\Debug\ADServer.Dlg_SetAllHttpParams.resources
+E:\Project\personal\东莞长盈\Code(20210308)\服务端\源码\obj\x86\Debug\ADServer.csproj.GenerateResource.Cache
+E:\Project\personal\东莞长盈\Code(20210308)\服务端 - 副本\源码\lib\ADServer.exe.config
+E:\Project\personal\东莞长盈\Code(20210308)\服务端 - 副本\源码\obj\x86\Debug\Interop.NetFwTypeLib.dll
+E:\Project\personal\东莞长盈\Code(20210308)\服务端 - 副本\源码\obj\x86\Debug\ADServer.csproj.ResolveComReference.cache
+E:\Project\personal\东莞长盈\Code(20210308)\服务端 - 副本\源码\obj\x86\Debug\ADServer.exe
+E:\Project\personal\东莞长盈\Code(20210308)\服务端 - 副本\源码\obj\x86\Debug\ADServer.pdb
+E:\Project\personal\东莞长盈\Code(20210308)\服务端 - 副本\源码\lib\ADServer.exe
+E:\Project\personal\东莞长盈\Code(20210308)\服务端 - 副本\源码\lib\ADServer.pdb
+E:\Project\personal\东莞长盈\Code(20210308)\服务端 - 副本\源码\lib\N1_SadpTools.dll
+E:\Project\personal\东莞长盈\Code(20210308)\服务端 - 副本\源码\lib\Npgsql.dll
+E:\Project\personal\东莞长盈\Code(20210308)\服务端 - 副本\源码\lib\Mono.Security.dll
+E:\Project\personal\东莞长盈\Code(20210308)\服务端 - 副本\源码\lib\System.Web.Http.dll
+E:\Project\personal\东莞长盈\Code(20210308)\服务端 - 副本\源码\lib\log4net.dll
+E:\Project\personal\东莞长盈\Code(20210308)\服务端 - 副本\源码\lib\System.Web.Http.WebHost.dll
+E:\Project\personal\东莞长盈\Code(20210308)\服务端 - 副本\源码\lib\System.Net.Http.dll
+E:\Project\personal\东莞长盈\Code(20210308)\服务端 - 副本\源码\lib\System.Net.Http.Formatting.dll
+E:\Project\personal\东莞长盈\Code(20210308)\服务端 - 副本\源码\lib\EntityFramework.xml
+E:\Project\personal\东莞长盈\Code(20210308)\服务端 - 副本\源码\lib\FKY_WCFLibrary.pdb
+E:\Project\personal\东莞长盈\Code(20210308)\服务端 - 副本\源码\lib\System.Web.Mvc.xml
+E:\Project\personal\东莞长盈\Code(20210308)\服务端 - 副本\源码\lib\System.Web.Http.xml
+E:\Project\personal\东莞长盈\Code(20210308)\服务端 - 副本\源码\lib\log4net.pdb
+E:\Project\personal\东莞长盈\Code(20210308)\服务端 - 副本\源码\lib\log4net.xml
+E:\Project\personal\东莞长盈\Code(20210308)\服务端 - 副本\源码\lib\System.Web.Http.WebHost.xml
+E:\Project\personal\东莞长盈\Code(20210308)\服务端 - 副本\源码\lib\System.Net.Http.xml
+E:\Project\personal\东莞长盈\Code(20210308)\服务端 - 副本\源码\lib\System.Net.Http.Formatting.xml
+E:\Project\personal\东莞长盈\Code(20210308)\服务端 - 副本\源码\lib\zh-Hans\System.Web.Http.resources.dll
+E:\Project\personal\东莞长盈\Code(20210308)\服务端 - 副本\源码\lib\zh-Hans\System.Web.Http.WebHost.resources.dll
+E:\Project\personal\东莞长盈\Code(20210308)\服务端 - 副本\源码\lib\zh-Hans\System.Net.Http.resources.dll
+E:\Project\personal\东莞长盈\Code(20210308)\服务端 - 副本\源码\lib\zh-Hans\System.Net.Http.Formatting.resources.dll
+E:\Project\personal\东莞长盈\Code(20210308)\服务端 - 副本\源码\obj\x86\Debug\ADServer.csprojResolveAssemblyReference.cache
+E:\Project\personal\东莞长盈\Code(20210308)\服务端 - 副本\源码\obj\x86\Debug\ADServer.ADMain.resources
+E:\Project\personal\东莞长盈\Code(20210308)\服务端 - 副本\源码\obj\x86\Debug\ADServer.Dlg_DoorName.resources
+E:\Project\personal\东莞长盈\Code(20210308)\服务端 - 副本\源码\obj\x86\Debug\ADServer.Dlg_Passageway.resources
+E:\Project\personal\东莞长盈\Code(20210308)\服务端 - 副本\源码\obj\x86\Debug\ADServer.Dlg_SelectLocalIP.resources
+E:\Project\personal\东莞长盈\Code(20210308)\服务端 - 副本\源码\obj\x86\Debug\ADServer.Dlg_SetHttpParams.resources
+E:\Project\personal\东莞长盈\Code(20210308)\服务端 - 副本\源码\obj\x86\Debug\ADServer.Dlg_WGTimeControl.resources
+E:\Project\personal\东莞长盈\Code(20210308)\服务端 - 副本\源码\obj\x86\Debug\ADServer.Frm_InitDatabase.resources
+E:\Project\personal\东莞长盈\Code(20210308)\服务端 - 副本\源码\obj\x86\Debug\ADServer.Frm_Reg.resources
+E:\Project\personal\东莞长盈\Code(20210308)\服务端 - 副本\源码\obj\x86\Debug\ADServer.Frm_SearchAccessController.resources
+E:\Project\personal\东莞长盈\Code(20210308)\服务端 - 副本\源码\obj\x86\Debug\ADServer.Frm_SearchAccessController_JS.resources
+E:\Project\personal\东莞长盈\Code(20210308)\服务端 - 副本\源码\obj\x86\Debug\ADServer.Frm_SearchAccessController_TDZ.resources
+E:\Project\personal\东莞长盈\Code(20210308)\服务端 - 副本\源码\obj\x86\Debug\FKY_CMP.ViewBack.Frm_SearchN1Device.resources
+E:\Project\personal\东莞长盈\Code(20210308)\服务端 - 副本\源码\obj\x86\Debug\ADServer.Frm_SMSFormat.resources
+E:\Project\personal\东莞长盈\Code(20210308)\服务端 - 副本\源码\obj\x86\Debug\ADServer.Frm_TcpIpConfigure.resources
+E:\Project\personal\东莞长盈\Code(20210308)\服务端 - 副本\源码\obj\x86\Debug\ADServer.Frm_TcpIpConfigureTDZ.resources
+E:\Project\personal\东莞长盈\Code(20210308)\服务端 - 副本\源码\obj\x86\Debug\ADServer.Frm_Version.resources
+E:\Project\personal\东莞长盈\Code(20210308)\服务端 - 副本\源码\obj\x86\Debug\ADServer.InitForm.resources
+E:\Project\personal\东莞长盈\Code(20210308)\服务端 - 副本\源码\obj\x86\Debug\ADServer.Properties.Resources.resources
+E:\Project\personal\东莞长盈\Code(20210308)\服务端 - 副本\源码\obj\x86\Debug\ADServer.Dlg_SetAllHttpParams.resources
+E:\Project\personal\东莞长盈\Code(20210308)\服务端 - 副本\源码\obj\x86\Debug\ADServer.csproj.GenerateResource.Cache
+E:\Project\personal\东莞长盈\Code(20210308)\服务端（单服务器）\源码\lib\ADServer.exe.config
+E:\Project\personal\东莞长盈\Code(20210308)\服务端（单服务器）\源码\obj\x86\Debug\Interop.NetFwTypeLib.dll
+E:\Project\personal\东莞长盈\Code(20210308)\服务端（单服务器）\源码\obj\x86\Debug\ADServer.csproj.ResolveComReference.cache
+E:\Project\personal\东莞长盈\Code(20210308)\服务端（单服务器）\源码\obj\x86\Debug\ADServer.exe
+E:\Project\personal\东莞长盈\Code(20210308)\服务端（单服务器）\源码\obj\x86\Debug\ADServer.pdb
+E:\Project\personal\东莞长盈\Code(20210308)\服务端（单服务器）\源码\lib\ADServer.exe
+E:\Project\personal\东莞长盈\Code(20210308)\服务端（单服务器）\源码\lib\ADServer.pdb
+E:\Project\personal\东莞长盈\Code(20210308)\服务端（单服务器）\源码\lib\N1_SadpTools.dll
+E:\Project\personal\东莞长盈\Code(20210308)\服务端（单服务器）\源码\lib\Npgsql.dll
+E:\Project\personal\东莞长盈\Code(20210308)\服务端（单服务器）\源码\lib\Mono.Security.dll
+E:\Project\personal\东莞长盈\Code(20210308)\服务端（单服务器）\源码\lib\System.Web.Http.dll
+E:\Project\personal\东莞长盈\Code(20210308)\服务端（单服务器）\源码\lib\log4net.dll
+E:\Project\personal\东莞长盈\Code(20210308)\服务端（单服务器）\源码\lib\System.Web.Http.WebHost.dll
+E:\Project\personal\东莞长盈\Code(20210308)\服务端（单服务器）\源码\lib\System.Net.Http.dll
+E:\Project\personal\东莞长盈\Code(20210308)\服务端（单服务器）\源码\lib\System.Net.Http.Formatting.dll
+E:\Project\personal\东莞长盈\Code(20210308)\服务端（单服务器）\源码\lib\EntityFramework.xml
+E:\Project\personal\东莞长盈\Code(20210308)\服务端（单服务器）\源码\lib\FKY_WCFLibrary.pdb
+E:\Project\personal\东莞长盈\Code(20210308)\服务端（单服务器）\源码\lib\System.Web.Mvc.xml
+E:\Project\personal\东莞长盈\Code(20210308)\服务端（单服务器）\源码\lib\System.Web.Http.xml
+E:\Project\personal\东莞长盈\Code(20210308)\服务端（单服务器）\源码\lib\log4net.pdb
+E:\Project\personal\东莞长盈\Code(20210308)\服务端（单服务器）\源码\lib\log4net.xml
+E:\Project\personal\东莞长盈\Code(20210308)\服务端（单服务器）\源码\lib\System.Web.Http.WebHost.xml
+E:\Project\personal\东莞长盈\Code(20210308)\服务端（单服务器）\源码\lib\System.Net.Http.xml
+E:\Project\personal\东莞长盈\Code(20210308)\服务端（单服务器）\源码\lib\System.Net.Http.Formatting.xml
+E:\Project\personal\东莞长盈\Code(20210308)\服务端（单服务器）\源码\lib\zh-Hans\System.Web.Http.resources.dll
+E:\Project\personal\东莞长盈\Code(20210308)\服务端（单服务器）\源码\lib\zh-Hans\System.Web.Http.WebHost.resources.dll
+E:\Project\personal\东莞长盈\Code(20210308)\服务端（单服务器）\源码\lib\zh-Hans\System.Net.Http.resources.dll
+E:\Project\personal\东莞长盈\Code(20210308)\服务端（单服务器）\源码\lib\zh-Hans\System.Net.Http.Formatting.resources.dll
+E:\Project\personal\东莞长盈\Code(20210308)\服务端（单服务器）\源码\obj\x86\Debug\ADServer.csprojResolveAssemblyReference.cache
+E:\Project\personal\东莞长盈\Code(20210308)\服务端（单服务器）\源码\obj\x86\Debug\ADServer.ADMain.resources
+E:\Project\personal\东莞长盈\Code(20210308)\服务端（单服务器）\源码\obj\x86\Debug\ADServer.Dlg_DoorName.resources
+E:\Project\personal\东莞长盈\Code(20210308)\服务端（单服务器）\源码\obj\x86\Debug\ADServer.Dlg_Passageway.resources
+E:\Project\personal\东莞长盈\Code(20210308)\服务端（单服务器）\源码\obj\x86\Debug\ADServer.Dlg_SelectLocalIP.resources
+E:\Project\personal\东莞长盈\Code(20210308)\服务端（单服务器）\源码\obj\x86\Debug\ADServer.Dlg_SetHttpParams.resources
+E:\Project\personal\东莞长盈\Code(20210308)\服务端（单服务器）\源码\obj\x86\Debug\ADServer.Dlg_WGTimeControl.resources
+E:\Project\personal\东莞长盈\Code(20210308)\服务端（单服务器）\源码\obj\x86\Debug\ADServer.Frm_InitDatabase.resources
+E:\Project\personal\东莞长盈\Code(20210308)\服务端（单服务器）\源码\obj\x86\Debug\ADServer.Frm_Reg.resources
+E:\Project\personal\东莞长盈\Code(20210308)\服务端（单服务器）\源码\obj\x86\Debug\ADServer.Frm_SearchAccessController.resources
+E:\Project\personal\东莞长盈\Code(20210308)\服务端（单服务器）\源码\obj\x86\Debug\ADServer.Frm_SearchAccessController_JS.resources
+E:\Project\personal\东莞长盈\Code(20210308)\服务端（单服务器）\源码\obj\x86\Debug\ADServer.Frm_SearchAccessController_TDZ.resources
+E:\Project\personal\东莞长盈\Code(20210308)\服务端（单服务器）\源码\obj\x86\Debug\FKY_CMP.ViewBack.Frm_SearchN1Device.resources
+E:\Project\personal\东莞长盈\Code(20210308)\服务端（单服务器）\源码\obj\x86\Debug\ADServer.Frm_SMSFormat.resources
+E:\Project\personal\东莞长盈\Code(20210308)\服务端（单服务器）\源码\obj\x86\Debug\ADServer.Frm_TcpIpConfigure.resources
+E:\Project\personal\东莞长盈\Code(20210308)\服务端（单服务器）\源码\obj\x86\Debug\ADServer.Frm_TcpIpConfigureTDZ.resources
+E:\Project\personal\东莞长盈\Code(20210308)\服务端（单服务器）\源码\obj\x86\Debug\ADServer.Frm_Version.resources
+E:\Project\personal\东莞长盈\Code(20210308)\服务端（单服务器）\源码\obj\x86\Debug\ADServer.InitForm.resources
+E:\Project\personal\东莞长盈\Code(20210308)\服务端（单服务器）\源码\obj\x86\Debug\ADServer.Properties.Resources.resources
+E:\Project\personal\东莞长盈\Code(20210308)\服务端（单服务器）\源码\obj\x86\Debug\ADServer.Dlg_SetAllHttpParams.resources
+E:\Project\personal\东莞长盈\Code(20210308)\服务端（单服务器）\源码\obj\x86\Debug\ADServer.csproj.GenerateResource.Cache

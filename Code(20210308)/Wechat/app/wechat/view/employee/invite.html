@@ -1,0 +1,84 @@
+{extend name="base/common"}
+{block name="body"}
+		<div>
+			<div class="flex_row blueTitle pd_15 ">
+				<div>
+					<img src="__PUBLIC__/static/wechat/images/thumbnail/write.png" width="30"/>
+				</div>
+				<div class="color_fff pl_10 pt_5">贵宾邀请-请填写邀请信息</div>
+			</div>
+			
+			<form action="#" method="post" id="form-invite" class="form-horizontal" role="form">
+			<div class="bg_fff bar pt_10 pb_30">
+				<div class="flex_row input">
+					<div class=" pl_20">贵宾姓名:</div>
+					<input type="text"  class="pl_10 fs_15 w_60" value="" id="name" name="name" placeholder="请输入贵宾姓名" />
+				</div>
+				<div class="flex_row input">
+					<div class=" pl_20">贵宾手机:</div>
+					<input class="pl_10 fs_15 w_60" value="" id="phone" name="phone" placeholder="请输入贵宾手机号码"/>
+				</div>
+				<div class="flex_row input">
+					<div class=" pl_20">身份证号:</div>
+					<input class="pl_10 fs_15 w_60" id="idcard" name="idcard" value="" placeholder="请输入贵宾身份证号"/>
+				</div>
+				<div class="flex_row input">
+					<div class=" pl_20">来访时间:</div>
+					<input class="pl_10 fs_15 form_datetime w_60" id="time" name="time" value="" readonly placeholder="请选择时间"/>
+				</div>
+				<div class="flex_row input">
+					<div class="fc_100 pl_20 pr_12">邀请事由:</div>
+					<select class="pl_10 fs_15 w_50" name="reasons" id="reasons">
+						{volist name="reasons" id="vo"}
+							<option value="{$vo.value}">{$vo.value} </option>
+						{/volist}
+					</select>
+				</div>
+				<div class="flex_row input">
+               				 <div class="fc_100 pl_20 pr_12">进入区域:</div>
+                   			 <select class="pl_10 fs_15 w_50" name="quyu" id="quyu">
+                      			 <option value="一般生产区">一般生产区</option>
+                       			 <option value="综合办公区">综合办公区</option>
+                   			 </select>
+           			 </div>
+           			 <div class="flex_row input">
+               				 <div class="fc_100 pl_20 pr_12">到访厂区:</div>
+                   			 <select class="pl_10 fs_15 w_50" name="area" id="area">
+                       			 <option value="生态园">生态园</option>
+                       			 <option value="松山湖">松山湖</option>
+                       			 <option value="大朗">大朗</option>
+                        		<option value="东莞长盈">东莞长盈</option>
+                       			<option value="水平分厂">水平分厂</option>
+					<option value="茶山分厂">茶山分厂</option>
+                   		 </select>
+           			 </div>
+				<div class="flex_row input">
+					<div class=" pl_20">车牌号码:</div>
+					<input class="pl_10 fs_15 w_60" value="" name="car_num" placeholder="选填"/>
+				</div>
+				<div class="button" href="javascript:void(0)" id="invite">确认邀请</div>
+			</div>
+			</form>
+			
+		</div>
+<script>
+
+window.onpopstate = function(event) {
+    WeixinJSBridge.call('closeWindow');
+}
+$(".form_datetime").datetimepicker({
+  language:'zh-CN',
+  minView:"hour",
+  todayHighlight: 1,
+  format: 'yyyy-mm-dd H:i',
+  todayBtn:  1,
+  startDate : new Date(),
+  autoclose: 1
+});
+</script>
+{/block}
+{block name="js"}
+
+<script src="__PUBLIC__/static/wechat/js/invite.js"  type="text/javascript"></script>
+
+{/block}

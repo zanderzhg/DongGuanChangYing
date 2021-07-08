@@ -1,0 +1,515 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E3414163-D95E-47FE-84F2-303DDD2F2931}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ADServer</RootNamespace>
+    <AssemblyName>ADServer</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>lib\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\lib\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationIcon>32.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AipSdk, Version=3.5.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\百度人脸比对服务\AipSdk.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=4.4.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="FKY_WCFLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\2019-2\更新人脸入库\FKY_WCFLibrary\FKY_WCFLibrary\bin\Debug\FKY_WCFLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="HttpWebResponseUtility">
+      <HintPath>..\..\JIESHUN_Interface\JIESHUN_Interface\bin\Debug\HttpWebResponseUtility.dll</HintPath>
+    </Reference>
+    <Reference Include="JIESHUN_Interface">
+      <HintPath>..\..\JIESHUN_Interface\JIESHUN_Interface\bin\Debug\JIESHUN_Interface.dll</HintPath>
+    </Reference>
+    <Reference Include="JWT, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\JWT.dll</HintPath>
+    </Reference>
+    <Reference Include="N1_SadpTools, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\HCNetSDKCom\N1_SadpTools.dll</HintPath>
+    </Reference>
+    <Reference Include="n3kAdrtB, Version=3.5.23003.20206, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\n3kAdrtB.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Npgsql, Version=2.2.5.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Npgsql.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="SystemLogs">
+      <HintPath>..\..\JIESHUN_Interface\JIESHUN_Interface\bin\Debug\SystemLogs.dll</HintPath>
+    </Reference>
+    <Reference Include="TecsunVisitor, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\TecsunVisitor.dll</HintPath>
+    </Reference>
+    <Reference Include="TopSdk, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\TopSdk.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\ADSHalCS.cs" />
+    <Compile Include="BLL\ADSHelp.cs" />
+    <Compile Include="BLL\B_AccessDoor.cs" />
+    <Compile Include="BLL\B_Base_Info.cs" />
+    <Compile Include="BLL\B_Booking_Info.cs" />
+    <Compile Include="BLL\B_Card_Info.cs" />
+    <Compile Include="BLL\B_Company_Info.cs" />
+    <Compile Include="BLL\B_DeleteFaceError_Info.cs" />
+    <Compile Include="BLL\B_Department_Info.cs" />
+    <Compile Include="BLL\B_Employ_Info.cs" />
+    <Compile Include="BLL\B_FaceCompare_Info.cs" />
+    <Compile Include="BLL\B_FaceGateDevice_Info.cs" />
+    <Compile Include="BLL\B_Groble_Info.cs" />
+    <Compile Include="BLL\B_ParkingStat_Info.cs" />
+    <Compile Include="BLL\B_PeopleStatus_Info.cs" />
+    <Compile Include="BLL\B_Plate_Info.cs" />
+    <Compile Include="BLL\B_VisitList_Info.cs" />
+    <Compile Include="BLL\B_VisitorFaceRecognition_Info.cs" />
+    <Compile Include="BLL\B_WG_Config.cs" />
+    <Compile Include="BLL\B_WG_Record.cs" />
+    <Compile Include="BLL\CTID\FKY_CTID.cs" />
+    <Compile Include="BLL\CTID\FKY_CTID_AccessToken.cs" />
+    <Compile Include="BLL\CTID\FKY_CTID_Simpauth.cs" />
+    <Compile Include="BLL\CTID\FKY_CTID_URL.cs" />
+    <Compile Include="BLL\CTID\TimeoutFunction.cs" />
+    <Compile Include="BLL\desMethod.cs" />
+    <Compile Include="BLL\Face\FaceHelper.cs" />
+    <Compile Include="BLL\Face\FaceManage.cs" />
+    <Compile Include="BLL\FKY_AI\FKY_ErrorCode.cs" />
+    <Compile Include="BLL\FKY_AI\FKY_FaceHelper.cs" />
+    <Compile Include="BLL\FKY_GA\FKY_GA_Common.cs" />
+    <Compile Include="BLL\FKY_GA\RSAHelper.cs" />
+    <Compile Include="BLL\HKFaceGateSDK\HikvisionFaceEventArgs.cs" />
+    <Compile Include="BLL\HKFaceGateSDK\HikvisionFaceMachine.cs" />
+    <Compile Include="BLL\HKFaceGateSDK\HikvisionFaceState.cs" />
+    <Compile Include="BLL\HKFaceGateSDK\HikvisionSDK.cs" />
+    <Compile Include="BLL\HKFaceGateSDK\Model\HKAlarmRecordInfo.cs" />
+    <Compile Include="BLL\HKFaceGateSDK\Model\HKCardInfo.cs" />
+    <Compile Include="BLL\HttpWebResponseUtility.cs" />
+    <Compile Include="BLL\INetFwManger.cs" />
+    <Compile Include="BLL\partial\B_Black_Info.cs" />
+    <Compile Include="BLL\partial\B_Booking_Info.cs" />
+    <Compile Include="BLL\partial\B_Employ_Info.cs" />
+    <Compile Include="BLL\partial\B_VisitList_Info.cs" />
+    <Compile Include="BLL\partial\B_WG_Record.cs" />
+    <Compile Include="BLL\partial\B_White_Info.cs" />
+    <Compile Include="BLL\Police\GZ\B_Police_GZ.cs" />
+    <Compile Include="BLL\TDZController\TDZController.cs" />
+    <Compile Include="BLL\TDZController\TDZHelper.cs" />
+    <Compile Include="BLL\TDZController\TDZHttpUri.cs" />
+    <Compile Include="BLL\TDZController\UnPack.cs" />
+    <Compile Include="BLL\TokenHelper.cs" />
+    <Compile Include="Common\DindDealWithInfo.cs" />
+    <Compile Include="DAL\D_FaceGateDevice_Info.cs" />
+    <Compile Include="DAL\D_ParkingStat_Info.cs" />
+    <Compile Include="DAL\D_Plate_Info.cs" />
+    <Compile Include="DAL\partial\D_Black_Info.cs" />
+    <Compile Include="DAL\partial\D_Booking_Info.cs" />
+    <Compile Include="DAL\partial\D_Employ_Info.cs" />
+    <Compile Include="DAL\partial\D_VisitList_Info.cs" />
+    <Compile Include="DAL\partial\D_WG_Record.cs" />
+    <Compile Include="DAL\partial\D_White_Info.cs" />
+    <Compile Include="DAL\Police\GZ\D_Police_GZ.cs" />
+    <Compile Include="Dlg_SelectLocalIP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dlg_SelectLocalIP.designer.cs">
+      <DependentUpon>Dlg_SelectLocalIP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dlg_SetHttpParams.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dlg_SetHttpParams.designer.cs">
+      <DependentUpon>Dlg_SetHttpParams.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_SearchAccessController_TDZ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_SearchAccessController_TDZ.designer.cs">
+      <DependentUpon>Frm_SearchAccessController_TDZ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_SearchN1Device.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_SearchN1Device.designer.cs">
+      <DependentUpon>Frm_SearchN1Device.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_TcpIpConfigureTDZ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_TcpIpConfigureTDZ.designer.cs">
+      <DependentUpon>Frm_TcpIpConfigureTDZ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BLL\SMS.cs" />
+    <Compile Include="BLL\WebServiceHelper.cs" />
+    <Compile Include="BLL\WindowWrapper.cs" />
+    <Compile Include="DAL\DataBase.cs" />
+    <Compile Include="DAL\DbHelperSQL.cs" />
+    <Compile Include="DAL\D_AccessDoor.cs" />
+    <Compile Include="DAL\D_Booking_Info.cs" />
+    <Compile Include="DAL\D_Card_Info.cs" />
+    <Compile Include="DAL\D_Company_Info.cs" />
+    <Compile Include="DAL\D_DeleteFaceError_Info.cs" />
+    <Compile Include="DAL\D_Department_Info.cs" />
+    <Compile Include="DAL\D_Employ_Info.cs" />
+    <Compile Include="DAL\D_FaceCompare_Info.cs" />
+    <Compile Include="DAL\D_Groble_Info.cs" />
+    <Compile Include="DAL\D_PeopleStatus_Info.cs" />
+    <Compile Include="DAL\D_SMS_Account.cs" />
+    <Compile Include="DAL\D_VisitList_Info.cs" />
+    <Compile Include="DAL\D_VisitorFaceRecognition_Info.cs" />
+    <Compile Include="DAL\D_WG_Config.cs" />
+    <Compile Include="DAL\D_WG_Record.cs" />
+    <Compile Include="DAL\LogNet.cs" />
+    <Compile Include="DAL\PostgreHelper.cs" />
+    <Compile Include="DAL\SysFunc.cs" />
+    <Compile Include="ADMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMain.Designer.cs">
+      <DependentUpon>ADMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dlg_DoorName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dlg_DoorName.designer.cs">
+      <DependentUpon>Dlg_DoorName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dlg_Passageway.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dlg_Passageway.designer.cs">
+      <DependentUpon>Dlg_Passageway.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dlg_WGTimeControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dlg_WGTimeControl.designer.cs">
+      <DependentUpon>Dlg_WGTimeControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_InitDatabase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_InitDatabase.designer.cs">
+      <DependentUpon>Frm_InitDatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Reg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Reg.Designer.cs">
+      <DependentUpon>Frm_Reg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_SearchAccessController.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_SearchAccessController.designer.cs">
+      <DependentUpon>Frm_SearchAccessController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_SearchAccessController_JS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_SearchAccessController_JS.designer.cs">
+      <DependentUpon>Frm_SearchAccessController_JS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_SMSFormat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_SMSFormat.designer.cs">
+      <DependentUpon>Frm_SMSFormat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_TcpIpConfigure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_TcpIpConfigure.designer.cs">
+      <DependentUpon>Frm_TcpIpConfigure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Version.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Version.Designer.cs">
+      <DependentUpon>Frm_Version.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InitForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InitForm.Designer.cs">
+      <DependentUpon>InitForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\ADInterface.cs" />
+    <Compile Include="Interface\DingTalkClient.cs" />
+    <Compile Include="Interface\JsonExtension.cs" />
+    <Compile Include="Interface\TokenHelper.cs" />
+    <Compile Include="Interface\VisitorInterface.cs" />
+    <Compile Include="Interface\VisitorInterfacep.cs" />
+    <Compile Include="Model\M_AccessControllerAuthorization_Info.cs" />
+    <Compile Include="Model\M_AccessDoor.cs" />
+    <Compile Include="Model\M_AD_Eventflow.cs" />
+    <Compile Include="Model\M_Black_Info.cs" />
+    <Compile Include="Model\M_Booking_Info.cs" />
+    <Compile Include="Model\M_Card_Info.cs" />
+    <Compile Include="Model\M_Company_Info.cs" />
+    <Compile Include="Model\M_DeleteFaceError_Info.cs" />
+    <Compile Include="Model\M_DeleteOneVisitor_Info.cs" />
+    <Compile Include="Model\M_Department_Info.cs" />
+    <Compile Include="Model\M_DingDepartment.cs" />
+    <Compile Include="Model\M_Employ_Info.cs" />
+    <Compile Include="Model\M_FaceBarrier_Info.cs" />
+    <Compile Include="Model\M_FaceGateDevice_Info.cs" />
+    <Compile Include="Model\M_Flow.cs" />
+    <Compile Include="Model\M_GetEmpCount_Info.cs" />
+    <Compile Include="Model\M_GetEmpFace_Info.cs" />
+    <Compile Include="Model\M_Groble_Info.cs" />
+    <Compile Include="Model\M_LicensePlateRecognition_Info.cs" />
+    <Compile Include="Model\M_ParkingStat_Info.cs" />
+    <Compile Include="Model\M_Plate_Info.cs" />
+    <Compile Include="Model\M_SMS_Account.cs" />
+    <Compile Include="Model\M_Token_Info.cs" />
+    <Compile Include="Model\M_VisitList_Info.cs" />
+    <Compile Include="Model\M_VisitorFaceRecognition_Info.cs" />
+    <Compile Include="Model\M_WG_Config.cs" />
+    <Compile Include="Model\M_WG_Record_Info.cs" />
+    <Compile Include="Model\M_White_Info.cs" />
+    <Compile Include="Model\PushEmpInfo.cs" />
+    <Compile Include="Model\TokenInfo.cs" />
+    <Compile Include="Model\WG_GrantMsg.cs" />
+    <Compile Include="partial\ADMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\ApiTools.cs" />
+    <Compile Include="Utils\INIHelper.cs" />
+    <Compile Include="Utils\JsonHelper.cs" />
+    <Compile Include="BLL\TDZController\NET_CARD.cs" />
+    <Compile Include="Dlg_SetAllHttpParams.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dlg_SetAllHttpParams.designer.cs">
+      <DependentUpon>Dlg_SetAllHttpParams.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ADMain.resx">
+      <DependentUpon>ADMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dlg_DoorName.resx">
+      <DependentUpon>Dlg_DoorName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dlg_Passageway.resx">
+      <DependentUpon>Dlg_Passageway.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dlg_SelectLocalIP.resx">
+      <DependentUpon>Dlg_SelectLocalIP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dlg_SetHttpParams.resx">
+      <DependentUpon>Dlg_SetHttpParams.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dlg_WGTimeControl.resx">
+      <DependentUpon>Dlg_WGTimeControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_InitDatabase.resx">
+      <DependentUpon>Frm_InitDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Reg.resx">
+      <DependentUpon>Frm_Reg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_SearchAccessController.resx">
+      <DependentUpon>Frm_SearchAccessController.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_SearchAccessController_JS.resx">
+      <DependentUpon>Frm_SearchAccessController_JS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_SearchAccessController_TDZ.resx">
+      <DependentUpon>Frm_SearchAccessController_TDZ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_SearchN1Device.resx">
+      <DependentUpon>Frm_SearchN1Device.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_SMSFormat.resx">
+      <DependentUpon>Frm_SMSFormat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_TcpIpConfigure.resx">
+      <DependentUpon>Frm_TcpIpConfigure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_TcpIpConfigureTDZ.resx">
+      <DependentUpon>Frm_TcpIpConfigureTDZ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Version.resx">
+      <DependentUpon>Frm_Version.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InitForm.resx">
+      <DependentUpon>InitForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Dlg_SetAllHttpParams.resx">
+      <DependentUpon>Dlg_SetAllHttpParams.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BLL\HKFaceGateSDK\HCNetSDKCom\HCAlarm.lib" />
+    <None Include="BLL\HKFaceGateSDK\HCNetSDKCom\HCGeneralCfgMgr.lib" />
+    <None Include="BLL\HKFaceGateSDK\HCNetSDKCom\HCPreview.lib" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="32.ico" />
+    <Content Include="BLL\HKFaceGateSDK\HCCore.dll" />
+    <Content Include="BLL\HKFaceGateSDK\HCNetSDK.dll" />
+    <Content Include="BLL\HKFaceGateSDK\HCNetSDKCom\AnalyzeData.dll" />
+    <Content Include="BLL\HKFaceGateSDK\HCNetSDKCom\AudioIntercom.dll" />
+    <Content Include="BLL\HKFaceGateSDK\HCNetSDKCom\HCAlarm.dll" />
+    <Content Include="BLL\HKFaceGateSDK\HCNetSDKCom\HCCoreDevCfg.dll" />
+    <Content Include="BLL\HKFaceGateSDK\HCNetSDKCom\HCDisplay.dll" />
+    <Content Include="BLL\HKFaceGateSDK\HCNetSDKCom\HCGeneralCfgMgr.dll" />
+    <Content Include="BLL\HKFaceGateSDK\HCNetSDKCom\HCIndustry.dll" />
+    <Content Include="BLL\HKFaceGateSDK\HCNetSDKCom\HCPlayBack.dll" />
+    <Content Include="BLL\HKFaceGateSDK\HCNetSDKCom\HCPreview.dll" />
+    <Content Include="BLL\HKFaceGateSDK\HCNetSDKCom\HCVoiceTalk.dll" />
+    <Content Include="BLL\HKFaceGateSDK\HCNetSDKCom\libiconv2.dll" />
+    <Content Include="BLL\HKFaceGateSDK\HCNetSDKCom\msvcr90.dll" />
+    <Content Include="BLL\HKFaceGateSDK\HCNetSDKCom\OpenAL32.dll" />
+    <Content Include="BLL\HKFaceGateSDK\HCNetSDKCom\StreamTransClient.dll" />
+    <Content Include="BLL\HKFaceGateSDK\HCNetSDKCom\SystemTransform.dll" />
+    <Content Include="BLL\HKFaceGateSDK\N1_SadpTools.dll" />
+    <Content Include="Mono.Security.dll" />
+    <Content Include="Npgsql.dll" />
+    <Content Include="图标05.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="NetFwTypeLib">
+      <Guid>{58FBCF7C-E7A9-467C-80B3-FC65E8FCCA08}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
